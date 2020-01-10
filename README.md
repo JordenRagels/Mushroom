@@ -3,9 +3,7 @@
 1) Forked from create-react-app, create-react-express, 08-Ins-MERN, and react-passport-exampl
 
 ## Installation
-1) Install .NET Framework 2.0
-2) Install Python 2.x, and add to PATH.
-3) Add the following to your .env: 
+1) Add the following to your .env: 
         1) GOOGLE_CLIENT_ID=
         GOOGLE_CLIENT_SECRET=
         NODE_ENV=
