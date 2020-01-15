@@ -4,64 +4,64 @@ import React, { useState } from "react";
 function Ap() {
   const [aState, setAState] = useState({
     mood: "Not Yet",
-    name: ["Holds Head Up Unsupported"],
+    name: ["Smiles at People"],
     time: ''
   });
   const [bState, setBState] = useState({
     mood: "Not Yet",
-    name: ["Can Roll from Stomach to Back"],
-    time: '',
-    value: 1
+    name: ["Can Self-Soothe for Short Periods"],
+    time: ''
   });
   const [cState, setCState] = useState({
     mood: "Not Yet",
-    name: ["Pushed Up Onto Elbows While on Stomach"],
+    name: ["Copies Movements and Facial Expressions"],
     time: ''
   });
   const [dState, setDState] = useState({
     mood: "Not Yet",
-    name: ["Pushes Legs Down on Hard Surfaces"],
+    name: ["Recognizes People Other Than Parents"],
     time: ''
   });
   const [eState, setEState] = useState({
     mood: "Not Yet",
-    name: ["Can Roll from Stomach to Back and Back to Stomach"],
+    name: ["Responds to Other People's Emotions"],
     time: ''
   });
   const [fState, setFState] = useState({
     mood: "Not Yet",
-    name: ["Can Sit Up without Support"],
+    name: ["Likes to Look at Self in Mirror"],
     time: ''
   });
   const [gState, setGState] = useState({
     mood: "Not Yet",
-    name: ["Can Stand with Assistance"],
+    name: ["Can Clearly Distinguish Between Familiar People and Strangers"],
     time: ''
   });
   const [hState, setHState] = useState({
     mood: "Not Yet",
-    name: ["Can Crawl on Hands and Knees"],
+    name: ["Understands 'No'"],
     time: ''
   });
   const [iState, setIState] = useState({
     mood: "Not Yet",
-    name: ["Can Walk with Assistance"],
+    name: ["Has Favorite Toys"],
     time: ''
   });
   const [jState, setJState] = useState({
     mood: "Not Yet",
-    name: ["Can Stand without Assistance "],
+    name: ["Repeats Sounds and Actions to Get Specific Reactions"],
     time: ''
   });
   const [kState, setKState] = useState({
     mood: "Not Yet",
-    name: ["Can Walk without Assistance"],
+    name: ["'Helps' with Activities such as Dressing or Picking Out Books" ],
     time: ''
   });
+ 
 
   return (
     <div>
-      <h1>Motor Milestones</h1>
+      <h1>Social Milestones</h1>
       <div className="card">
         <div>
           {aState.name}
@@ -73,7 +73,7 @@ function Ap() {
           {aState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setAState({ ...aState, mood: "Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setAState({ ...aState, mood: "Achieved", time:Date.now() })} className="btn-success">
             Milestone Achieved!
           </button>
         </div>
@@ -90,7 +90,7 @@ function Ap() {
           {bState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setBState({ ...bState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setBState({ ...bState, mood: "Milestone Achieved" , time: Date.now()})} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -248,8 +248,13 @@ function Ap() {
   </button>
         </div>
       </div>
+      <br></br>
+      
+
+
     </div>
   );
+
 }
 
 export default Ap;

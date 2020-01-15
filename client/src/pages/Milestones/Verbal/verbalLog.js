@@ -4,64 +4,74 @@ import React, { useState } from "react";
 function Ap() {
   const [aState, setAState] = useState({
     mood: "Not Yet",
-    name: ["Holds Head Up Unsupported"],
+    name: ["Coos and Gurgles"],
     time: ''
   });
   const [bState, setBState] = useState({
     mood: "Not Yet",
-    name: ["Can Roll from Stomach to Back"],
-    time: '',
-    value: 1
+    name: ["Turns Head Toward Sounds"],
+    time: ''
   });
   const [cState, setCState] = useState({
     mood: "Not Yet",
-    name: ["Pushed Up Onto Elbows While on Stomach"],
+    name: ["Simple Babbles"],
     time: ''
   });
   const [dState, setDState] = useState({
     mood: "Not Yet",
-    name: ["Pushes Legs Down on Hard Surfaces"],
+    name: ["Attempts to Copy Sounds with Babbles"],
     time: ''
   });
   const [eState, setEState] = useState({
     mood: "Not Yet",
-    name: ["Can Roll from Stomach to Back and Back to Stomach"],
+    name: ["Develops Distinct Cries Depending on Needs (Hunger vs Pain)"],
     time: ''
   });
   const [fState, setFState] = useState({
     mood: "Not Yet",
-    name: ["Can Sit Up without Support"],
+    name: ["Strins Vowels Together While Babbling"],
     time: ''
   });
   const [gState, setGState] = useState({
     mood: "Not Yet",
-    name: ["Can Stand with Assistance"],
+    name: ["Responds to Name"],
     time: ''
   });
   const [hState, setHState] = useState({
     mood: "Not Yet",
-    name: ["Can Crawl on Hands and Knees"],
+    name: ["Begins to Make Consonant Sounds"],
     time: ''
   });
   const [iState, setIState] = useState({
     mood: "Not Yet",
-    name: ["Can Walk with Assistance"],
+    name: ["Picks Up Things Between Thumb and Finger"],
     time: ''
   });
   const [jState, setJState] = useState({
     mood: "Not Yet",
-    name: ["Can Stand without Assistance "],
+    name: ["Copies Sounds such as Animal Noises"],
     time: ''
   });
   const [kState, setKState] = useState({
     mood: "Not Yet",
-    name: ["Can Walk without Assistance"],
+    name: ["Has a Wide Variety of Babbles"],
     time: ''
   });
+  const [lState, setLState] = useState({
+    mood: "Not Yet",
+    name: ["Speaks Simple Wordsr"],
+    time: ''
+  });
+  const [mState, setMState] = useState({
+    mood: "Not Yet",
+    name: ["Sounds Change in Tone to Mimic Speech"],
+    time: ''
+  });
+  
 
   return (
     <div>
-      <h1>Motor Milestones</h1>
+      <h1>Verbal Milestones</h1>
       <div className="card">
         <div>
           {aState.name}
@@ -73,7 +83,7 @@ function Ap() {
           {aState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setAState({ ...aState, mood: "Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setAState({ ...aState, mood: "Achieved", time:Date.now() })} className="btn-success">
             Milestone Achieved!
           </button>
         </div>
@@ -90,7 +100,7 @@ function Ap() {
           {bState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setBState({ ...bState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setBState({ ...bState, mood: "Milestone Achieved" , time: Date.now()})} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -248,8 +258,45 @@ function Ap() {
   </button>
         </div>
       </div>
+      <br></br>
+      <div className="card12">
+        <div>
+          {lState.name}
+        </div>
+        <div>
+          Status: {lState.mood}
+        </div>
+        <div>
+          {lState.time}
+        </div>
+        <div className="btn-group">
+          <button onClick={() => setLState({ ...lState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+            Milestone Achieved!
+  </button>
+        </div>
+      </div>
+      <br></br>
+      <div className="card13">
+        <div>
+          {mState.name}
+        </div>
+        <div>
+          Status: {mState.mood}
+        </div>
+        <div>
+          {mState.time}
+        </div>
+        <div className="btn-group">
+          <button onClick={() => setMState({ ...mState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+            Milestone Achieved!
+  </button>
+        </div>
+      </div>
+      <br></br>
+
     </div>
   );
+
 }
 
 export default Ap;

@@ -3,6 +3,7 @@ import { Header } from '../../../components';
 import "./social.css";
 import App from '../../../App';
 import Chart from "chart.js";
+import Ap from './socialLog'
 const barOptions_stacked = {
     tooltips: {
         enabled: false
@@ -114,6 +115,7 @@ export default class Social extends Component {
                     ref={this.chartRef}
                 />
             </div>
+            <Ap/>
             </div>
         )
     }

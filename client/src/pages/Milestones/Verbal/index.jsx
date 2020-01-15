@@ -3,7 +3,7 @@ import { Header } from '../../../components';
 import "./verbal.css";
 import App from '../../../App';
 import Chart from "chart.js";
-
+import Ap from './verbalLog'
 
 
 const barOptions_stacked = {
@@ -120,6 +120,7 @@ export default class Verbal extends Component {
                 />
                 <h6>Age in Months</h6>
             </div>
+            <Ap/>
             </div>
         )
     }
