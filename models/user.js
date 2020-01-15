@@ -1,40 +1,42 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
-const bcrypt = require('bcryptjs')
+var bcrypt = require("bcrypt-nodejs");
 
-const userSchema = new Schema({
-	firstName: { type: String, unique: false },
-	lastName: { type: String, unique: false },
-	local: {
-		username: { type: String, unique: false, required: false },
-		password: { type: String, unique: false, required: false }
-	},
-	google: {
-		googleId: { type: String, required: false }
-	},
-	photos: []
-})
+module.exports = function (sequelize, DataTypes) {
+  var User = sequelize.define("User", {
+    firstName: DataTypes.STRING,
+    lastName: DataTypes.STRING,
+    googleId: DataTypes.STRING,
+    username: DataTypes.STRING,
+    password: DataTypes.STRING
+  }, {
+    hooks: {
+      beforeCreate: (user) => {
+        const salt = bcrypt.genSaltSync();
+        user.password = bcrypt.hashSync(user.password, salt);
+      }
+    },
+    instanceMethods: {
+      validPassword: function (password) {
+        return bcrypt.compareSync(password, this.password);
+      }
+    }
+  });
 
-userSchema.methods = {
-	checkPassword: function (inputPassword) {
-		return bcrypt.compareSync(inputPassword, this.local.password)
-	},
-	hashPassword: plainTextPassword => {
-		return bcrypt.hashSync(plainTextPassword, 10)
-	}
-}
-
-// MUST HASH BEFORE SAVE
-userSchema.pre('save', function (next) {
-	if (!this.local.password) {
-		next()
-	} else {
-		this.local.password = this.hashPassword(this.local.password)
-		next()
-	}
-})
+  User.associate = function (models) {
+    User.hasMany(models.Cognitive, {
+      onDelete: "cascade"
+    });
+    User.hasMany(models.Motor, {
+      onDelete: "cascade"
+    });
+    User.hasMany(models.Social, {
+      onDelete: "cascade"
+    });
+    User.hasMany(models.Verbal, {
+      onDelete: "cascade"
+    });
+  };
 
 
-const User = mongoose.model('User', userSchema)
+  return User;
+};
 
-module.exports = User

@@ -10,7 +10,7 @@ passport.serializeUser((user, done) => {
 passport.deserializeUser((id, done) => {
 	User.findOne(
 		{ _id: id },
-		'firstName lastName photos local.username',
+		'firstName lastName photos username',
 		(err, user) => {
 			done(null, user)
 		}
