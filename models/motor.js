@@ -1,16 +1,16 @@
 module.exports = function(sequelize, DataTypes) {
     var Motor = sequelize.define("Motor", {
-      head: DataTypes.BOOLEAN, //holds head unsupported
-      roll: DataTypes.BOOLEAN, //can roll from tummy to back
-      elbows: DataTypes.BOOLEAN, //pushes onto elbows while on tummy
-      rollOver: DataTypes.BOOLEAN, //can roll from back to tummy and tummy to back
-      mouth: DataTypes.BOOLEAN, //brings things to mouth
-      sit: DataTypes.BOOLEAN, //can sit without support
-      standing: DataTypes.BOOLEAN, //standing with assistance
-      crawling: DataTypes.BOOLEAN, //hands and knees crawling
-      walkAssist: DataTypes.BOOLEAN, //walking with assistance
-      standUnassist: DataTypes.BOOLEAN, //standing without assistance 
-      walkUnassist: DataTypes.BOOLEAN, //walking without assistance
+      head: DataTypes.INTEGER, //holds head unsupported
+      roll: DataTypes.INTEGER, //can roll from tummy to back
+      elbows: DataTypes.INTEGER, //pushes onto elbows while on tummy
+      rollOver: DataTypes.INTEGER, //can roll from back to tummy and tummy to back
+      mouth: DataTypes.INTEGER, //brings things to mouth
+      sit: DataTypes.INTEGER, //can sit without support
+      standing: DataTypes.INTEGER, //standing with assistance
+      crawling: DataTypes.INTEGER, //hands and knees crawling
+      walkAssist: DataTypes.INTEGER, //walking with assistance
+      standUnassist: DataTypes.INTEGER, //standing without assistance 
+      walkUnassist: DataTypes.INTEGER, //walking without assistance
       //date: { type: DataTypes.DATE, defaultValue: DataTypes.NOW }
     });
     
