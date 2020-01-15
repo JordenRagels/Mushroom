@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import Timestamp from 'react-timestamp';
+import Date from 'react-timestamp';
+import TimestampButton from "./Timestamp";
+import Moment from 'react-moment';
 function Ap() {
   const [developerState, setDeveloperState] = useState({
-     mood: "Not Yet",
+    mood: "Not Yet",
     name: ["Follows Things With Eyes"],
-    time: Timestamp
+    time: 1
   });
-  const[devState,  setDevState] = useState({
+  const [devState, setDevState] = useState({
     mood: "Not Yet",
-    name: [ "Begins to Get Bored When There is Not Enough Stimulation"]
+    name: ["Begins to Get Bored When There is Not Enough Stimulation"],
+    time: 1
   });
-  const[cState,  setCState] = useState({
+  const [cState, setCState] = useState({
     mood: "Not Yet",
-    name: [ "Responds to Affection"]
+    name: ["Responds to Affection"],
+    time: 1
   });
 
   return (
@@ -29,15 +33,12 @@ function Ap() {
           {developerState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setDeveloperState({ ...developerState, mood: "Not Yet", Timestamp })} className="btn-danger">
-          Not Yet Achieved
-          </button>
           <button onClick={() => setDeveloperState({ ...developerState, mood: "Achieved" })} className="btn-success">
-           Milestone Achieved!
+            Milestone Achieved!
           </button>
         </div>
       </div>
-<br></br>
+      <br></br>
       <div className="card2">
         <div>
           {devState.name}
@@ -45,12 +46,12 @@ function Ap() {
         <div>
           Status: {devState.mood}
         </div>
+        <div>
+          {devState.time}
+        </div>
         <div className="btn-group">
-          <button onClick={() => setDevState({ ...devState, mood: "Not Yet" })} className="btn-danger">
-           Not Yet Achieved
-  </button>
           <button onClick={() => setDevState({ ...devState, mood: "Milestone Achieved" })} className="btn-success">
-           Milestone Achieved!
+            Milestone Achieved!
   </button>
         </div>
       </div>
@@ -62,18 +63,21 @@ function Ap() {
         <div>
           Status: {cState.mood}
         </div>
+        <div>
+          {cState.time}
+        </div>
         <div className="btn-group">
-          <button onClick={() => setCState({ ...cState, mood: "Not Yet" })} className="btn-danger">
-           Not Yet Achieved
-  </button>
-          <button onClick={() => setCState({ ...cState, mood: "Milestone Achieved" })} className="btn-success">
-           Milestone Achieved!
+          <button onClick={() => setCState({ ...cState, mood: "Milestone Achieved", time: 5 })} className="btn-success">
+            Milestone Achieved!
   </button>
         </div>
       </div>
+
+
     </div>
   );
 
 }
 
 export default Ap;
+

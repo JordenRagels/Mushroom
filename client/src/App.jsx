@@ -12,6 +12,7 @@ import Verbal from './pages/Milestones/Verbal'
 import Eating from "./pages/EatingandSleepingCharts/Eating"
 import Sleeping from "./pages/EatingandSleepingCharts/Sleeping"
 import Log from "./pages/Log"
+import Percentile from './pages/PercentileCalculator'
 class App extends Component {
 	constructor(props) {
 		super(props)
@@ -145,6 +146,14 @@ class App extends Component {
 					path="/log"
 					render={() =>
 						<Log></Log>
+					}
+				/>
+
+<Route
+					exact
+					path="/percentile"
+					render={() =>
+						<Percentile></Percentile>
 					}
 				/>
 			</div>
