@@ -3,6 +3,7 @@ import { Header } from '../../../components';
 import "./cognitive.css";
 import App from '../../../App';
 import Chart from "chart.js";
+import Ap from './cogLog'
 
 const barOptions_stacked = {
     tooltips: {
@@ -115,6 +116,7 @@ export default class Cognitive extends Component {
                     ref={this.chartRef}
                 />
             </div>
+            <Ap/>
             </div>
         )
     }
