@@ -4,7 +4,8 @@ import "./motor.css";
 import App from '../../../App';
 import Chart from "chart.js";
 import { Bar } from 'react-chartjs-2';
-import Ap from './motorLog'
+import Ap from './motorLog';
+import ProgChart from './progress'
 
 const barOptions_stacked = {
     tooltips: {
@@ -112,6 +113,7 @@ export default class Motor extends Component {
                         ref={this.chartRef}
                     />
                 </div>
+                <ProgChart/>,
                 <Ap/>
             </div>
         )

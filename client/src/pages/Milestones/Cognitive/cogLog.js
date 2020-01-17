@@ -5,72 +5,86 @@ function Ap() {
   const [aState, setAState] = useState({
     mood: "Not Yet",
     name: ["Follows Things With Eyes"],
-    time: ''
+    time: '',
+    value:1
   });
   const [bState, setBState] = useState({
     mood: "Not Yet",
     name: ["Begins to Get Bored When There is Not Enough Stimulation"],
-    time: ''
+    time: '',
+    value:1
   });
   const [cState, setCState] = useState({
     mood: "Not Yet",
     name: ["Responds to Affection"],
-    time: ''
+    time: '',
+    value:1
   });
   const [dState, setDState] = useState({
     mood: "Not Yet",
     name: ["Uses Hands and Eyes Together (Seeing a Toy and Reaching for It"],
-    time: ''
+    time: '',
+    value:1
   });
   const [eState, setEState] = useState({
     mood: "Not Yet",
     name: ["Brings Things to Mouth"],
-    time: ''
+    time: '',
+    value:1
   });
   const [fState, setFState] = useState({
     mood: "Not Yet",
     name: ["Shows Curiosity (Sees Things Out of Reach and Tries to Get It"],
-    time: ''
+    time: '',
+    value:1
   });
   const [gState, setGState] = useState({
     mood: "Not Yet",
     name: ["Passes Things from Hand to Hand"],
-    time: ''
+    time: '',
+    value:1
   });
   const [hState, setHState] = useState({
     mood: "Not Yet",
     name: ["Looks for Things When They Are Hidden"],
-    time: ''
+    time: '',
+    value:1
   });
   const [iState, setIState] = useState({
     mood: "Not Yet",
     name: ["Picks Up Things Between Thumb and Finger"],
-    time: ''
+    time: '',
+    value:1
   });
   const [jState, setJState] = useState({
     mood: "Not Yet",
     name: ["Watches the Path of Moving Things"],
-    time: ''
+    time: '',
+    value:1
   });
   const [kState, setKState] = useState({
     mood: "Not Yet",
     name: ["Interacts with Things in Various Ways (Shaking & Throwing Things)"],
-    time: ''
+    time: '',
+    value:1
   });
   const [lState, setLState] = useState({
     mood: "Not Yet",
     name: ["Pokes and Points with Index Finger"],
-    time: ''
+    time: '',
+    value:1
   });
   const [mState, setMState] = useState({
     mood: "Not Yet",
     name: ["Follows Simple Directions (Picking Up a Toy When Told To)"],
-    time: ''
+    time: '',
+    value:1
   });
   const [nState, setNState] = useState({
     mood: "Not Yet",
     name: ["Looks or Points at Things or Pictures of Things When They Are Named"],
-    time: ''
+    time: '',
+    value:1
   });
   const [oState, setOState] = useState({
     mood: "Not Yet",
@@ -80,7 +94,8 @@ function Ap() {
   const [pState, setPState] = useState({
     mood: "Not Yet",
     name: ["Takes Things In and Out of Containers"],
-    time: ''
+    time: '',
+    value:1
   });
 
   return (

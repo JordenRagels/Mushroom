@@ -4,7 +4,7 @@ import "./cognitive.css";
 import App from '../../../App';
 import Chart from "chart.js";
 import Ap from './cogLog'
-
+import ProgChart from './progress';
 const barOptions_stacked = {
     tooltips: {
         enabled: false
@@ -116,6 +116,7 @@ export default class Cognitive extends Component {
                     ref={this.chartRef}
                 />
             </div>
+             <ProgChart/> ,       
             <Ap/>
             </div>
         )
