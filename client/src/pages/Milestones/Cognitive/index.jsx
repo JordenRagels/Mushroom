@@ -73,7 +73,7 @@ export default class Cognitive extends Component {
     
     
     componentDidMount() {
-        const myChartRef = this.chartRef.current.getContext("2d");
+        let myChartRef = this.chartRef.current;
         
         new Chart(myChartRef, {
             type: "horizontalBar",

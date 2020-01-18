@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header } from '../../../components';
-import "./social.css";
+import "./motor.css";
 import App from '../../../App';
 import Chart from "chart.js";
 import Ap from './socialLog';
@@ -52,7 +52,6 @@ const barOptions_stacked = {
             ctx.textAlign = "left";
             ctx.font = "9px Open Sans";
             ctx.fillStyle = "#fff";
-
             Chart.helpers.each(this.data.datasets.forEach(function (dataset, i) {
                 var meta = chartInstance.controller.getDatasetMeta(i);
                 Chart.helpers.each(meta.data.forEach(function (bar, index) {
@@ -69,11 +68,8 @@ const barOptions_stacked = {
     pointLabelFontFamily : "Quadon Extra Bold",
     scaleFontFamily : "Quadon Extra Bold",
 };
-
-export default class Social extends Component {
+export default class Motor extends Component {
     chartRef = React.createRef();
-    
-    
     componentDidMount() {
         const myChartRef = this.chartRef.current.getContext("2d");
         
@@ -81,24 +77,22 @@ export default class Social extends Component {
             type: "horizontalBar",
             data: {
                 //Bring in data
-                labels:["Smiles at People", "Can Self-Soothe for Short Periods", "Copies Movements and Facial Expressions", "Recognizes People Other Than Parents", "Responds to Other People's Emotions", "Likes to Look At Self in Mirror", "Can Clearly Distinguish Between Familiar People and Strangers", "Understands 'No'", "Has Favorite Toys", "Repeats Sounds and Actions to Get Specific Responses", "'Helps' with Activities Such as Dressing or Picking Out Books"],
+                labels:["Holds Up Head Unsupported" , "Can Roll from Tummy to Back", "Pushes Up Onto Elbows While on Tummy", "Pushes Legs Down on Hard Surfaces", "Can Roll from Tummy to Back and Back to Tummy", "Can Sit Without Assistance", "Can Stand With Assistance", "Crawls on Hands and Knees", "Can Walk With Assistance","Can Stand Briefly Without Assistance", "Can Walk Breifly Without Assistance"],
                 datasets: [
                     {
                        
-                        data: [1,1,4,4,6,6,8,9,9,9,10,11] ,
+                        data: [2, 3, 4, 4, 4, 5, 5,5,6,9,11] ,
                         backgroundColor:"white"
                     },
                     {
                         
-                        data:[3,3,3,3,3,3,3,3,3,3,2,],
+                        data:[2,2,2,2,3,5,6,6,6,3,1],
                         backgroundColor:"red",
-
                         
                     }
                 ]
             },
             options: 
-
                barOptions_stacked
             
                 //Customize chart options
@@ -109,7 +103,7 @@ export default class Social extends Component {
         return (
             <div>
             <div className="heading">
-            <h1>Social Skills</h1>
+            <h1>Motor Skills</h1>
             </div>
             <div className="n">
                 <canvas

@@ -2,15 +2,12 @@ const db = require("../models");
 const router = require("express").Router();
 
 // Read All
-router.route("/").get(function(req, res){
-    console.log(req.query)
+router.route("/").get(function (req, res) {
     db.Book
-        .find()
-        .sort({ date: -1 })
-        .then(dbModel => {
+        .findAll({})
+        .then((dbModel) => {
             console.log(dbModel)
             res.json(dbModel)
-            
         })
         .catch(err => res.status(422).json(err));
 })
@@ -26,7 +23,7 @@ router.route("/").post((req, res) => {
 // Read One
 router.route("/:id").get((req, res) => {
     db.Book
-        .findById(req.params.id)
+        .findByPk(req.params.id)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
 })
@@ -34,7 +31,7 @@ router.route("/:id").get((req, res) => {
 // Update 
 router.route("/:id").put((req, res) => {
     db.Book
-        .findOneAndUpdate({ _id: req.params.id }, req.body)
+        .update({where: { "id": req.params.id }}, req.body)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
 })
@@ -42,8 +39,9 @@ router.route("/:id").put((req, res) => {
 // Delete
 router.route("/:id").delete((req, res) => {
     db.Book
-        .findById({ _id: req.params.id })
-        .then(dbModel => dbModel.remove())
+        .destroy({
+            where: { "id": req.params.id }
+        })
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
 });

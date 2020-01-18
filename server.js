@@ -8,14 +8,25 @@ require('dotenv').config()
 const express = require('express')
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-const session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
+const cookieParser = require('cookie-parser');
+const expressSession = require('express-session');
+const SessionStore = require('express-session-sequelize')(expressSession.Store);
 const passport = require('./utils/passport');
-const mongoose = require('mongoose');
+const db = require("./models");
 const path = require('path');
 const app = express()
 const routes = require("./controllers");
-const PORT = process.env.PORT || 8080
+const PORT = process.env.PORT || 8081
+const Sequelize = require('sequelize');
+// const db = new Sequelize('test', 'root', 'root', {
+//     host: 'localhost',
+//     dialect: 'mysql',
+// });
+
+const sequelizeSessionStore = new SessionStore({
+    db: db.sequelize,
+});
+ 
 
 // ===== Middleware ====
 app.use(morgan('dev'))
@@ -25,19 +36,14 @@ app.use(
 	})
 )
 app.use(bodyParser.json());
-
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/projectthree",
-	{
-		useNewUrlParser: true,
-		useUnifiedTopology: true
-	});
+app.use(cookieParser());
 
 app.use(
-	session({
+	expressSession({
 		secret: process.env.APP_SECRET || 'this is the default passphrase',
-		store: new MongoStore({ mongooseConnection: mongoose.connection }),
+		store: sequelizeSessionStore,
 		resave: false,
-		saveUninitialized: false
+		saveUninitialized: false,
 	})
 )
 
@@ -67,10 +73,18 @@ app.use(function (err, req, res, next) {
 	res.status(500)
 })
 
+// ====== Sync Models to Database
+let force = false;
 
+if (process.env.NODE_ENV === "development") {
+	force = true;
+}
 
 // ==== Starting Server =====
 
-app.listen(PORT, () => {
-	console.log(`App listening on PORT: ${PORT}`)
+db.sequelize.sync({ force: force }).then(function () {
+	console.log(`Sequlize connected`)
+	app.listen(PORT, () => {
+		console.log(`App listening on PORT: ${PORT}`)
+	})
 })
