@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { Doughnut } from 'react-chartjs-2'
-
-
 
 function Ap() {
   const [aState, setAState] = useState({

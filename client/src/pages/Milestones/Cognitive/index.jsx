@@ -3,7 +3,7 @@ import { Header } from '../../../components';
 import "./cognitive.css";
 import Chart from "chart.js";
 import Ap from './cogLog'
-import ProgChart from './cogLog';
+import ProgChart from './progress';
 const barOptions_stacked = {
     tooltips: {
         enabled: false
