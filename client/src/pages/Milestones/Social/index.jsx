@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Header } from '../../../components';
-import "./motor.css";
+import "./social.css";
 import App from '../../../App';
 import Chart from "chart.js";
 import Ap from './socialLog';

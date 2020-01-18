@@ -3,7 +3,7 @@ const router = require("express").Router();
 
 // Read All
 router.route("/").get(function (req, res) {
-    db.Cognitive
+    db.Motor
         .findAll({})
         .then((dbModel) => {
             console.log(dbModel)
@@ -15,7 +15,7 @@ router.route("/").get(function (req, res) {
 // Create
 router.route("/").post((req, res) => {
     console.log(req.body);
-    db.Cognitive
+    db.Motor
         .create(req.body)
         .then(dbModel => res.json(dbModel))
         .catch(err => res.status(422).json(err));
