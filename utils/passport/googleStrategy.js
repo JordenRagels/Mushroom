@@ -10,7 +10,7 @@ const strategy = new GoogleStrategy(
 	function(accessToken, refreshToken, profile, done) {
 		console.log(profile)
 		const { id, name, photos } = profile
-		User.findOne({ 'google.googleId': id }, (err, userMatch) => {
+		User.find({ where: {'google.googleId': id }}, (err, userMatch) => {
 			// handle errors here:
 			if (err) {
 				return done(null, false)
@@ -19,20 +19,18 @@ const strategy = new GoogleStrategy(
 			if (userMatch) {
 				return done(null, userMatch)
 			} else {
-				const newGoogleUser = new User({
+				User.create({
 					'google.googleId': id,
 					firstName: name.givenName,
-					lastName: name.familyName,
-					photos: photos
-				})
-				newGoogleUser.save((err, savedUser) => {
+					lastName: name.familyName
+				}, {}).then(err, savedUser => {
 					if (err) {
 						console.log(err)
 						return done(null, false)
 					} else {
 						return done(null, savedUser)
 					}
-				})
+				});
 			}
 		})
 	}
