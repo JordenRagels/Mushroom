@@ -12,7 +12,7 @@ import Verbal from './pages/Milestones/Verbal'
 import Eating from "./pages/EatingandSleepingCharts/Eating"
 import Sleeping from "./pages/EatingandSleepingCharts/Sleeping"
 import Log from "./pages/Log"
-import Percentile from './pages/PercentileCalculator'
+import Percentile from './pages/PercentileCalculator/index.js'
 class App extends Component {
 	constructor(props) {
 		super(props)
@@ -149,16 +149,17 @@ class App extends Component {
 					}
 				/>
 
-<Route
+				<Route
 					exact
 					path="/percentile"
 					render={() =>
 						<Percentile></Percentile>
 					}
 				/>
+				
 			</div>
+
 		)
 	}
 }
-
-export default App
+export default App;
