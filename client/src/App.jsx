@@ -11,6 +11,8 @@ import Social from './pages/Milestones/Social'
 import Verbal from './pages/Milestones/Verbal'
 import Eating from "./pages/EatingandSleepingCharts/Eating"
 import Sleeping from "./pages/EatingandSleepingCharts/Sleeping"
+import Log from "./pages/Log"
+import Percentile from './pages/PercentileCalculator'
 class App extends Component {
 	constructor(props) {
 		super(props)
@@ -96,47 +98,63 @@ class App extends Component {
 				/>
 
 				<Route
-				exact
-				path="/cognitive"
-				render={()=>
-				<Cognitive>cog</Cognitive>
-				}
+					exact
+					path="/cognitive"
+					render={() =>
+						<Cognitive>cog</Cognitive>
+					}
 				/>
 
 				<Route
-				exact
-				path="/motor"
-				render={()=>
-				<Motor></Motor>
-				}
+					exact
+					path="/motor"
+					render={() =>
+						<Motor></Motor>
+					}
 				/>
-					<Route
-				exact
-				path="/social"
-				render={()=>
-				<Social></Social>
-				}
+				<Route
+					exact
+					path="/social"
+					render={() =>
+						<Social></Social>
+					}
 				/>
-					<Route
-				exact
-				path="/verbal"
-				render={()=>
-				<Verbal></Verbal>
-				}
+				<Route
+					exact
+					path="/verbal"
+					render={() =>
+						<Verbal></Verbal>
+					}
 				/>
-					<Route
-				exact
-				path="/eating"
-				render={()=>
-				<Eating></Eating>
-				}
+				<Route
+					exact
+					path="/eating"
+					render={() =>
+						<Eating></Eating>
+					}
 				/>
-									<Route
-				exact
-				path="/sleeping"
-				render={()=>
-				<Sleeping></Sleeping>
-				}
+				<Route
+					exact
+					path="/sleeping"
+					render={() =>
+						<Sleeping></Sleeping>
+					}
+				/>
+
+				<Route
+					exact
+					path="/log"
+					render={() =>
+						<Log></Log>
+					}
+				/>
+
+<Route
+					exact
+					path="/percentile"
+					render={() =>
+						<Percentile></Percentile>
+					}
 				/>
 			</div>
 		)

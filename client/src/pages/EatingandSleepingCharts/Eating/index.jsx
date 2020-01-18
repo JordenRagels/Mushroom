@@ -179,6 +179,18 @@ class Eating extends Component {
                        
                     </tbody>
                 </table>
+                <div className="weightCalc">
+                <table>
+                    <th>Weight Percentile Calculator</th>
+                    <tbody>
+                        <td>Age<input type="number"></input> Months</td>
+                        <td>Weight<input type="number"></input>kg</td>
+                        <td><input readOnly="readonly" type="text" name="PercentileResult"></input>Percentile</td>
+                    </tbody>
+                </table>
+                
+                </div>
+
             </div>
         )
     }

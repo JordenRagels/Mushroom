@@ -3,6 +3,9 @@ import { Header } from '../../../components';
 import "./motor.css";
 import App from '../../../App';
 import Chart from "chart.js";
+import Ap from './socialLog';
+import ProgChart from './progress';
+
 const barOptions_stacked = {
     tooltips: {
         enabled: false
@@ -108,6 +111,8 @@ export default class Motor extends Component {
                     ref={this.chartRef}
                 />
             </div>
+            <ProgChart/>
+            <Ap/>
             </div>
         )
     }
