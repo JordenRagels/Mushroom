@@ -10,15 +10,19 @@ const strategy = new GoogleStrategy(
 	function(accessToken, refreshToken, profile, done) {
 		console.log(profile)
 		const { id, name, photos } = profile
-		User.find({ where: {'google.googleId': id }}, (err, userMatch) => {
+		User.findOne({ where: {'googleId': id }}, (err, userMatch) => {
+			console.log("user")
 			// handle errors here:
 			if (err) {
+				console.log(err)
 				return done(null, false)
 			}
 			// if there is already someone with that googleId
 			if (userMatch) {
+				console.log(userMatch)
 				return done(null, userMatch)
 			} else {
+				console.log("wheee")
 				User.create({
 					'google.googleId': id,
 					firstName: name.givenName,
