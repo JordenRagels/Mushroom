@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Header } from '../../../components';
 import "./cognitive.css";
 import Chart from "chart.js";
 import Ap from './cogLog'
@@ -55,7 +54,7 @@ const barOptions_stacked = {
                 var meta = chartInstance.controller.getDatasetMeta(i);
                 Chart.helpers.each(meta.data.forEach(function (bar, index) {
                    let data = dataset.data[index];
-                    if(i==0){
+                    if(i===0){
                         ctx.fillText(data, 50, bar._model.y+4);
                     } else {
                         ctx.fillText(data, bar._model.x-25, bar._model.y+4);

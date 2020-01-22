@@ -1,6 +1,4 @@
-import { Header } from '../../../components';
 import "./eating.css";
-import App from '../../../App';
 import React, { Component } from 'react';
 
 class Eating extends Component {

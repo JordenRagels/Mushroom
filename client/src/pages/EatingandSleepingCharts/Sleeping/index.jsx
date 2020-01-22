@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import { Header } from '../../../components';
+import React from 'react';
 import "./sleeping.css";
-import App from '../../../App';
+
 
 class Sleeping extends React.Component {
     render() {
