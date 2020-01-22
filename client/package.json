@@ -9,6 +9,7 @@
     "bootstrap": "^4.4.1",
     "chart.js": "^2.9.3",
     "negotiator": "^0.6.2",
+    "node": "^13.6.0",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-bootstrap-table": "^4.3.1",
@@ -18,12 +19,14 @@
     "react-dom": "^16.12.0",
     "react-globally": "^1.1.0",
     "react-moment": "^0.9.7",
+    "react-native-render-html": "^4.2.0",
     "react-router-dom": "^5.1.2",
     "react-table": "^7.0.0-rc.15",
     "react-timestamp": "^5.1.0",
     "stats-percentile": "^3.1.0"
   },
   "devDependencies": {
+    "html-loader": "^0.5.5",
     "react-scripts": "^3.3.0"
   },
   "scripts": {

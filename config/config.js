@@ -9,7 +9,8 @@ module.exports = {
         "define": {
             "timestamps": false,
             "freezeTableName": true
-        }
+        },
+
     },
     "production": {
         "username": process.env.DB_USER,
