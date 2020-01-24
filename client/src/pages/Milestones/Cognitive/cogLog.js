@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Ap() {
+function App() {
   const [aState, setAState] = useState({
     mood: "Not Yet",
     name: ["Follows Things With Eyes"],
@@ -95,6 +95,26 @@ function Ap() {
     time: '',
     data: ""
   });
+  // handleSubmit(event) {
+	// 	event.preventDefault()
+	// 	// TODO - validate!
+	// 	axios
+	// 		.post('/auth/signup', {
+	// 			eyes: 1,
+	// 			bored: 1
+	// 		})
+	// 		.then(response => {
+	// 			console.log(response)
+	// 			if (!response.data.errmsg) {
+	// 				console.log('youre good')
+	// 				this.setState({
+	// 					redirectTo: '/login'
+	// 				})
+	// 			} else {
+	// 				console.log('duplicate')
+	// 			}
+	// 		})
+	// }
 
   return (
     <div>
@@ -369,12 +389,17 @@ function Ap() {
             Milestone Achieved!
              </button>
         </div>
+        <div className="btn-group">
+          <button className="btn-success">
+            Milestone Achieved!
+             </button>
+        </div>
       </div>
 
     </div>
   );
 
-}
+  }
 
-export default Ap;
+export default App;
 
