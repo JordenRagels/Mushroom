@@ -5,24 +5,20 @@ const strategy = new GoogleStrategy(
 	{
 		clientID: process.env.GOOGLE_CLIENT_ID,
 		clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-		callbackURL: '/auth/google/callback'
+		callbackURL: 'http://localhost:8081/auth/google/callback'
 	},
 	function(accessToken, refreshToken, profile, done) {
 		console.log(profile)
 		const { id, name, photos } = profile
-		User.findOne({ where: {'googleId': id }}, (err, userMatch) => {
-			console.log("user")
+		User.findOne({ where: {'google.googleId': id }}, (err, userMatch) => {
 			// handle errors here:
 			if (err) {
-				console.log(err)
 				return done(null, false)
 			}
 			// if there is already someone with that googleId
 			if (userMatch) {
-				console.log(userMatch)
 				return done(null, userMatch)
 			} else {
-				console.log("wheee")
 				User.create({
 					'google.googleId': id,
 					firstName: name.givenName,
