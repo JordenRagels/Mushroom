@@ -1,133 +1,140 @@
 import React, { useState } from "react";
+import { Doughnut } from 'react-chartjs-2';
 
 function Ap() {
   const [aState, setAState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Follows Things With Eyes"],
     time: '',
-    value: 1
   });
   const [bState, setBState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Begins to Get Bored When There is Not Enough Stimulation"],
     time: '',
-    value: 1
   });
   const [cState, setCState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Responds to Affection"],
     time: '',
-    value: 1
   });
   const [dState, setDState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Uses Hands and Eyes Together (Seeing a Toy and Reaching for It"],
     time: '',
-    value: 1
   });
   const [eState, setEState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Brings Things to Mouth"],
     time: '',
-    value: 1
   });
   const [fState, setFState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Shows Curiosity (Sees Things Out of Reach and Tries to Get It"],
     time: '',
-    value: 1
   });
   const [gState, setGState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Passes Things from Hand to Hand"],
     time: '',
-    value: 1
   });
   const [hState, setHState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Looks for Things When They Are Hidden"],
     time: '',
-    value: 1
   });
   const [iState, setIState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Picks Up Things Between Thumb and Finger"],
     time: '',
-    value: 1
+
   });
   const [jState, setJState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Watches the Path of Moving Things"],
     time: '',
-    value: 1
+
   });
   const [kState, setKState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Interacts with Things in Various Ways (Shaking & Throwing Things)"],
     time: '',
-    value: 1
+
   });
   const [lState, setLState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Pokes and Points with Index Finger"],
     time: '',
-    value: 1
   });
   const [mState, setMState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Follows Simple Directions (Picking Up a Toy When Told To)"],
     time: '',
-    value: 1
+
   });
   const [nState, setNState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Looks or Points at Things or Pictures of Things When They Are Named"],
     time: '',
   });
   const [oState, setOState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Uses Items Correctly (Drinks from Cup)"],
     time: ''
   });
   const [pState, setPState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Takes Things In and Out of Containers"],
     time: '',
-    data: ""
   });
+
+  const [zState, setZState] = useState({
+    labels: ['red'],
+    datasets: [{
+      data: [1],
+      backgroundColor: 'red',}]
+  });
+  console.log(zState.labels);
+  console.log(zState.datasets);
+  console.log(zState.datasets.length);
+  console.log(zState.datasets[0].data);
+
+
 
   return (
     <div>
       <h1>Cognitive Milestones</h1>
+      <Doughnut data={zState} />
       <div className="card">
         <div>
           {aState.name}
         </div>
         <div>
-          Status: {aState.mood}
+          Status: {aState.accomlished}
         </div>
         <div>
           {aState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setAState({ ...aState, mood: "Achieved", time: Date.now(), value: '' })} className="btn-success">
+          <button onClick={() => { setAState({ ...aState, accomlished: "Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1] }]  }) }} className="btn-success"
+          >
             Milestone Achieved!
           </button>
         </div>
       </div>
+
       <br></br>
       <div className="card2">
         <div>
           {bState.name}
         </div>
         <div>
-          Status: {bState.mood}
+          Status: {bState.accomlished}
         </div>
         <div>
           {bState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setBState({ ...bState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setBState({ ...bState, accomlished: "Milestone Achieved", time: Date().toString() });  setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1] }]  }) }} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -138,13 +145,13 @@ function Ap() {
           {cState.name}
         </div>
         <div>
-          Status: {cState.mood}
+          Status: {cState.accomlished}
         </div>
         <div>
           {cState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setCState({ ...cState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setCState({ ...cState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1] }]   }) }} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -155,13 +162,13 @@ function Ap() {
           {dState.name}
         </div>
         <div>
-          Status: {dState.mood}
+          Status: {dState.accomlished}
         </div>
         <div>
           {dState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setDState({ ...dState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setDState({ ...dState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1, 1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -172,13 +179,13 @@ function Ap() {
           {eState.name}
         </div>
         <div>
-          Status: {eState.mood}
+          Status: {eState.accomlished}
         </div>
         <div>
           {eState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setEState({ ...eState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setEState({ ...eState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -189,13 +196,13 @@ function Ap() {
           {fState.name}
         </div>
         <div>
-          Status: {fState.mood}
+          Status: {fState.accomlished}
         </div>
         <div>
           {fState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setFState({ ...fState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setFState({ ...fState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -206,13 +213,13 @@ function Ap() {
           {gState.name}
         </div>
         <div>
-          Status: {gState.mood}
+          Status: {gState.accomlished}
         </div>
         <div>
           {gState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setGState({ ...gState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() =>{ setGState({ ...gState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -223,13 +230,13 @@ function Ap() {
           {hState.name}
         </div>
         <div>
-          Status: {hState.mood}
+          Status: {hState.accomlished}
         </div>
         <div>
           {hState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setHState({ ...hState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setHState({ ...hState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -240,13 +247,13 @@ function Ap() {
           {iState.name}
         </div>
         <div>
-          Status: {iState.mood}
+          Status: {iState.accomlished}
         </div>
         <div>
           {iState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setIState({ ...iState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setIState({ ...iState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -257,13 +264,13 @@ function Ap() {
           {jState.name}
         </div>
         <div>
-          Status: {jState.mood}
+          Status: {jState.accomlished}
         </div>
         <div>
           {jState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setJState({ ...jState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setJState({ ...jState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -274,13 +281,13 @@ function Ap() {
           {kState.name}
         </div>
         <div>
-          Status: {kState.mood}
+          Status: {kState.accomlished}
         </div>
         <div>
           {kState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setKState({ ...kState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setKState({ ...kState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -291,13 +298,13 @@ function Ap() {
           {lState.name}
         </div>
         <div>
-          Status: {lState.mood}
+          Status: {lState.accomlished}
         </div>
         <div>
           {lState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setLState({ ...lState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setLState({ ...lState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1,1,1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -308,13 +315,13 @@ function Ap() {
           {mState.name}
         </div>
         <div>
-          Status: {mState.mood}
+          Status: {mState.accomlished}
         </div>
         <div>
           {mState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setMState({ ...mState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setMState({ ...mState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1,1,1,1,1,1,1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -325,13 +332,13 @@ function Ap() {
           {nState.name}
         </div>
         <div>
-          Status: {nState.mood}
+          Status: {nState.accomlished}
         </div>
         <div>
           {nState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setNState({ ...nState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setNState({ ...nState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1, 1,1,1,1,1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -342,13 +349,13 @@ function Ap() {
           {oState.name}
         </div>
         <div>
-          Status: {oState.mood}
+          Status: {oState.accomlished}
         </div>
         <div>
           {oState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setOState({ ...oState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setOState({ ...oState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1, 1,1,1,1,1,1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
          </button>
         </div>
@@ -359,13 +366,13 @@ function Ap() {
           {pState.name}
         </div>
         <div>
-          Status: {pState.mood}
+          Status: {pState.accomlished}
         </div>
         <div>
           {pState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setPState({ ...pState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => {setPState({ ...pState, accomlished: "Milestone Achieved", time: Date().toString()}); setZState({ ...zState, labels: ['blue'], datasets: [{data:[1, 1, 1,1, 1,1,1,1,1,1,1,1,1,1,1,1,1] }]  })}} className="btn-success">
             Milestone Achieved!
              </button>
         </div>

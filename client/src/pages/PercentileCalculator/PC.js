@@ -32,7 +32,7 @@ export class Per extends React.Component {
             x = Math.abs(r);
             if (x > Math.pow(10, 21)) return msign + x.toString();
             var m = Math.round(x * Math.pow(10, dps)).toString();
-            if (dps == 0) return msign + m;
+            if (dps === 0) return msign + m;
             while (m.length <= dps) m = "0" + m;
             return msign + m.substring(0, m.length - dps) + "." + m.substring(m.length - dps);
         }
@@ -64,9 +64,9 @@ export class Per extends React.Component {
         var calctxt = "";
         var xmltxt = "";
         var htmtxt = "";
-        var Sex_radio = [0,1,2];
+        var Sex_radio = [0, 1, 2];
         var Sex = 0;
-        var Age_param="";
+        var Age_param = "";
         var param_value = " ";
         var unit_parts = 0;
         var Age_unit = 0;
@@ -93,7 +93,7 @@ export class Per extends React.Component {
             Length = param_value * parseFloat(unit_parts[0]) + parseFloat(unit_parts[1]);
             var dp = decpts.options[decpts.selectedIndex].text;
 
-            if (Sex == 1) {
+            if (Sex === 1) {
                 if (Age >= 0 && Age < 1) { L = -0.809249882; M = 51.68358057; S = 0.046818545; };
                 if (Age >= 1 && Age < 2) { L = -0.050782985; M = 55.28612813; S = 0.0434439; };
                 if (Age >= 2 && Age < 3) { L = 0.476851407; M = 58.09381906; S = 0.041716103; };
@@ -131,7 +131,7 @@ export class Per extends React.Component {
                 if (Age >= 34 && Age < 35) { L = 0.620285102; M = 93.82945392; S = 0.041928568; };
                 if (Age >= 35 && Age < 36) { L = 0.57955631; M = 94.43382278; S = 0.041971514; };
             }
-            if (Sex == 2) {
+            if (Sex === 2) {
                 if (Age >= 0 && Age < 1) { L = 0.511237696; M = 52.6959753; S = 0.048692684; };
                 if (Age >= 1 && Age < 2) { L = -0.45224446; M = 56.62842855; S = 0.04411683; };
                 if (Age >= 2 && Age < 3) { L = -0.990594599; M = 59.60895343; S = 0.041795583; };
@@ -209,19 +209,20 @@ export class Per extends React.Component {
                             <span>Sex</span>
                             <div className="medCalcFontOne"><input id="input128" type="radio"
                                 className="Sex_radio" checked="checked" value="Female"
-                                onChange={CDCInfantLengthForAge_fx}/> Female</div>
+                                onChange={CDCInfantLengthForAge_fx} /> Female</div>
 
 
-                            <div colSpan="3" align="left"><span className="medCalcFontOne"><input id="input129" type="radio"
+                            <div colSpan="3"><span className="medCalcFontOne"><input id="input129" type="radio"
                                 name="Sex_radio" value="Male" onChange={CDCInfantLengthForAge_fx} /> Male</span>
 
-
+                                <br></br>
+                                <br></br>
                                 <div className="calc_firsttd"><span className="medCalcFontOneBold">Age</span> </div>
                                 <div className="calc_secondtd"> <input id="input" type="number" name="Age_param"
                                     className="calc_inputbox" onBlur={CDCInfantLengthForAge_fx}
                                     onChange={CDCInfantLengthForAge_fx} /></div>
                                 <div className="calc_thirdtd"></div>
-
+                                <br></br>
                                 <select name="Age_unit" onChange={CDCInfantLengthForAge_fx}
                                     className="medCalcFontSelect calc_unitSelect">
                                     <option value="1|0|mo" >mo</option>
@@ -235,21 +236,21 @@ export class Per extends React.Component {
                                 <div className="calc_thirdtd"></div>
 
 
-
+                                <br></br>
                                 <div id="calc_result">
                                     <span className="medCalcFontIO">Results:</span>
 
                                     <div className="spacer"></div>
                                     <div summary="MedCalc 3000 Table" cellSpacing="4">
 
-                                        <div align="right"><span className="medCalcFontOneBold">Z Score</span></div>
+                                        <div><span className="medCalcFontOneBold">Z Score</span></div>
                                         <div align="top"> <input readOnly="readonly" type="text" name="Z_Score_param"
                                             className="calc_inputbox" /></div>
                                         <div align="left">&nbsp;</div>
 
-                                        <div align="right"><span className="medCalcFontOneBold">Percentile</span></div>
+                                        <div><span className="medCalcFontOneBold">Percentile</span></div>
                                         <div align="top"> <input readOnly="readonly" type="text" name="Percentile_param"
-                                            className="calc_inputbox"/></div>
+                                            className="calc_inputbox" /></div>
                                         <div align="left">&nbsp;</div>
 
                                         <div colSpan="3" align="center"><span className="medCalcFontOneBold">DecimalPrecision:</span>
