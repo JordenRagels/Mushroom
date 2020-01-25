@@ -5,12 +5,12 @@ const strategy = new GoogleStrategy(
 	{
 		clientID: process.env.GOOGLE_CLIENT_ID,
 		clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-		callbackURL: '/auth/google/callback'
+		callbackURL: 'http://localhost:8081/auth/google/callback'
 	},
 	function(accessToken, refreshToken, profile, done) {
 		console.log(profile)
 		const { id, name, photos } = profile
-		User.find({ where: {'google.googleId': id }}, (err, userMatch) => {
+		User.findOne({ where: {'google.googleId': id }}, (err, userMatch) => {
 			// handle errors here:
 			if (err) {
 				return done(null, false)

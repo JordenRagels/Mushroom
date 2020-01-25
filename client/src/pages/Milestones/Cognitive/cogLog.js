@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Doughnut } from 'react-chartjs-2';
 
-function Ap() {
+function App() {
   const [aState, setAState] = useState({
     accomlished: "Not Yet",
     name: ["Follows Things With Eyes"],
@@ -86,6 +86,26 @@ function Ap() {
     name: ["Takes Things In and Out of Containers"],
     time: '',
   });
+  // handleSubmit(event) {
+	// 	event.preventDefault()
+	// 	// TODO - validate!
+	// 	axios
+	// 		.post('/auth/signup', {
+	// 			eyes: 1,
+	// 			bored: 1
+	// 		})
+	// 		.then(response => {
+	// 			console.log(response)
+	// 			if (!response.data.errmsg) {
+	// 				console.log('youre good')
+	// 				this.setState({
+	// 					redirectTo: '/login'
+	// 				})
+	// 			} else {
+	// 				console.log('duplicate')
+	// 			}
+	// 		})
+	// }
 
   const [zState, setZState] = useState({
     labels: ['red'],
@@ -376,12 +396,17 @@ function Ap() {
             Milestone Achieved!
              </button>
         </div>
+        <div className="btn-group">
+          <button className="btn-success">
+            Milestone Achieved!
+             </button>
+        </div>
       </div>
 
     </div>
   );
 
-}
+  }
 
-export default Ap;
+export default App;
 
