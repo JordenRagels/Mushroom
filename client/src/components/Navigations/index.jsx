@@ -30,6 +30,16 @@ function NavigationsComponent() {
                             Percentile Calculator
 						</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/eating" className="nav-link">
+                            Eating Chart
+						</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to="/sleeping" className="nav-link">
+                           Sleeping Chart
+						</Link>
+                    </li>
                 </ul>
             }
         </nav>
