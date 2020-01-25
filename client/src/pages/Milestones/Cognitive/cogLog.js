@@ -95,26 +95,18 @@ function App() {
     time: '',
     data: ""
   });
-  // handleSubmit(event) {
-	// 	event.preventDefault()
-	// 	// TODO - validate!
-	// 	axios
-	// 		.post('/auth/signup', {
-	// 			eyes: 1,
-	// 			bored: 1
-	// 		})
-	// 		.then(response => {
-	// 			console.log(response)
-	// 			if (!response.data.errmsg) {
-	// 				console.log('youre good')
-	// 				this.setState({
-	// 					redirectTo: '/login'
-	// 				})
-	// 			} else {
-	// 				console.log('duplicate')
-	// 			}
-	// 		})
-	// }
+  function handleSubmit (event) {
+		event.preventDefault()
+		// TODO - validate!
+		axios
+			.post('/api/cognitive', {
+				eyes: 1,
+				bored: 1
+			})
+			.then(response => {
+				console.log(response)
+			})
+    }
 
   return (
     <div>
