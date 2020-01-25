@@ -7,7 +7,6 @@ export default class Percentile extends Component {
         return (
             <div>
                 <div className="heading">
-                    <h1>Cognitive Skills</h1>
                     <Per />
                 </div>
             </div>
