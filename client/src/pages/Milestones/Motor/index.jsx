@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-
 import "./motor.css";
-
 import Chart from "chart.js";
-
+import { Navigations } from '../../../components/Navigations/index';
 import Ap from './motorLog';
 import ProgChart from './progress'
 
@@ -104,6 +102,7 @@ export default class Motor extends Component {
     render() {
         return (
             <div>
+                <Navigations/>
                 <div className="heading">
                     <h1>Motor Skills</h1>
                 </div>
