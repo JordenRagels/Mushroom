@@ -149,7 +149,13 @@ class App extends Component {
 					}
 				/>
 
-	
+				<Route
+					exact
+					path="/percentile"
+					render={() =>
+						<Percentile></Percentile>
+					}
+				/>
 				
 			</div>
 

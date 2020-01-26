@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Header } from '../../components';
 import "./home.css";
+import HomeNavs from '../../components/HomeNavs/index';
 
 export default class Home extends Component {
 	constructor(props) {
@@ -10,7 +11,7 @@ export default class Home extends Component {
 		}
 	}
 
-	
+
 	componentDidMount() {
 		console.log("Home Component Mounted")
 	}
@@ -35,6 +36,8 @@ export default class Home extends Component {
 					<code>
 						{JSON.stringify(this.props)}
 					</code>
+
+
 				</div>
 			)
 		}

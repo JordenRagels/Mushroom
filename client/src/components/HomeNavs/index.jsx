@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from 'react-router-dom'
-import './navigations.css'
+import { Link } from 'react-router-dom';
 
-function NavigationsComponent() {
+function HomeNavs() {
     return (
         <nav className="navbar">
                 <ul className="nav">
@@ -51,4 +50,4 @@ function NavigationsComponent() {
     )
 }
 
-export const Navigations = React.memo(NavigationsComponent);
+export default HomeNavs;

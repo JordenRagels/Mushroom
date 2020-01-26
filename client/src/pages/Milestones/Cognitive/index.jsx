@@ -80,21 +80,20 @@ export default class Cognitive extends Component {
             data: {
                 //Bring in data
                 labels: ["Follows Things With Eyes", "Begins to Get Bored When There is Not Enough Stimulation", "Responds to Affection", "Uses Hands and Eyes Together", "Brings Things to Mouth", "Shows Curiosity (Sees Things Out of Reach and Tries to Get Them", "Passes Things from Hand to Hand", "Looks for Things When Hidden", "Picks Up Things Between Thumb and Finger", "Watches the Path of Moving Things", ("Interacts with Things in Various Ways (Shaking and Throwing Things)"), ("Pokes and Points with Index Finger"), ("Follows Simple Directions"), ("Looks or Points at Things or Pictures of Things When Tey Are Named"), ("Uses Items Correctly (Able to Drink From Cup"), ("Able to Take Things In and Out of Containers")],
+                
                 datasets: [
                     {
-
                         data: [1, 2, 3, 4, 5, 6, 9, 9, 9, 9, 10, 10, 11, 11, 11, 11],
-                        backgroundColor: "white"
+                        backgroundColor: "#D2C4C3",
+                        color: '#D2C4C3'
                     },
                     {
-
                         data: [1, 1, 2, 2, 5, 4, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1],
-                        backgroundColor: "red",
-
-
+                        backgroundColor: "#94A0B0",
                     }
                 ]
             },
+
             options:
 
                 barOptions_stacked
@@ -107,6 +106,7 @@ export default class Cognitive extends Component {
         return (
             <div>
                 <Navigations />
+                <div className="background">
                 <div className="heading">
                     <h1>Cognitive Skills</h1>
                 </div>
@@ -117,7 +117,8 @@ export default class Cognitive extends Component {
                     />
                 </div>
                 <Ap />
-
+                <br></br>
+            </div>
             </div>
         )
     }
