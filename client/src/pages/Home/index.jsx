@@ -10,6 +10,7 @@ export default class Home extends Component {
 		}
 	}
 
+	
 	componentDidMount() {
 		console.log("Home Component Mounted")
 	}
@@ -28,6 +29,7 @@ export default class Home extends Component {
 		} else {
 			return (
 				<div className="Home">
+				
 					<Header user={this.state.user} />
 					<p>Current User:</p>
 					<code>

@@ -8,70 +8,79 @@ function App() {
     name: ["Follows Things With Eyes"],
     time: '',
   });
+
   const [bState, setBState] = useState({
     accomlished: "Not Yet",
     name: ["Begins to Get Bored When There is Not Enough Stimulation"],
     time: '',
   });
+
   const [cState, setCState] = useState({
     accomlished: "Not Yet",
     name: ["Responds to Affection"],
     time: '',
   });
+
   const [dState, setDState] = useState({
     accomlished: "Not Yet",
     name: ["Uses Hands and Eyes Together (Seeing a Toy and Reaching for It"],
     time: '',
   });
+
   const [eState, setEState] = useState({
     accomlished: "Not Yet",
     name: ["Brings Things to Mouth"],
     time: '',
   });
+
   const [fState, setFState] = useState({
     accomlished: "Not Yet",
     name: ["Shows Curiosity (Sees Things Out of Reach and Tries to Get It"],
     time: '',
   });
+
   const [gState, setGState] = useState({
     accomlished: "Not Yet",
     name: ["Passes Things from Hand to Hand"],
     time: '',
   });
+
   const [hState, setHState] = useState({
     accomlished: "Not Yet",
     name: ["Looks for Things When They Are Hidden"],
     time: '',
   });
+
   const [iState, setIState] = useState({
     accomlished: "Not Yet",
     name: ["Picks Up Things Between Thumb and Finger"],
     time: '',
-
   });
+
   const [jState, setJState] = useState({
     accomlished: "Not Yet",
     name: ["Watches the Path of Moving Things"],
-    time: '',
-
+    time: ''
   });
+
   const [kState, setKState] = useState({
     accomlished: "Not Yet",
     name: ["Interacts with Things in Various Ways (Shaking & Throwing Things)"],
     time: '',
-
   });
+
   const [lState, setLState] = useState({
     accomlished: "Not Yet",
     name: ["Pokes and Points with Index Finger"],
     time: '',
   });
+
   const [mState, setMState] = useState({
     accomlished: "Not Yet",
     name: ["Follows Simple Directions (Picking Up a Toy When Told To)"],
     time: '',
-
   });
+
   const [nState, setNState] = useState({
     accomlished: "Not Yet",
     name: ["Looks or Points at Things or Pictures of Things When They Are Named"],
@@ -90,7 +99,7 @@ function App() {
 
 
   function handleSubmit(event) {
-    event.preventDefault()
+    
     // TODO - validate!
     axios
       .post('/api/cognitive', {
@@ -389,11 +398,6 @@ function App() {
         </div>
         <div className="btn-group">
           <button onClick={() => { setPState({ ...pState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
-            Milestone Achieved!
-             </button>
-        </div>
-        <div className="btn-group">
-          <button className="btn-success">
             Milestone Achieved!
              </button>
         </div>
