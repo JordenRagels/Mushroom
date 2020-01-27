@@ -3,7 +3,6 @@ import { Navigations } from '../../../components/Navigations/index';
 import "./social.css";
 import Chart from "chart.js";
 import Ap from './socialLog';
-import ProgChart from './progress';
 
 const barOptions_stacked = {
     tooltips: {
@@ -76,17 +75,28 @@ export default class Motor extends Component {
             type: "horizontalBar",
             data: {
                 //Bring in data
-                labels:["Holds Up Head Unsupported" , "Can Roll from Tummy to Back", "Pushes Up Onto Elbows While on Tummy", "Pushes Legs Down on Hard Surfaces", "Can Roll from Tummy to Back and Back to Tummy", "Can Sit Without Assistance", "Can Stand With Assistance", "Crawls on Hands and Knees", "Can Walk With Assistance","Can Stand Briefly Without Assistance", "Can Walk Breifly Without Assistance"],
+                labels:["Smiles at People",
+                "Can Self-Soothe for Short Periods", 
+                "Copies Movements and Facial Expressions", 
+                "Recognizes People Other Than Parents", 
+                "Responds to Other People's Emotions", 
+                "Likes to Look at Self in Mirror",
+                "Can Clearly Distinguish Between Familiar People and Strangers", 
+                "Understands 'No'", 
+                "Has Favorite Toys", 
+                "Repeats Sounds and Actions to Get Specific Reactions", 
+                "'Helps' with Activities such as Dressing or Picking Out Books"],
                 datasets: [
                     {
                        
                         data: [2, 3, 4, 4, 4, 5, 5,5,6,9,11] ,
-                        backgroundColor:"white"
+                        backgroundColor: "#D2C4C3",
+                        color: '#D2C4C3'
                     },
                     {
                         
                         data:[2,2,2,2,3,5,6,6,6,3,1],
-                        backgroundColor:"red",
+                        backgroundColor: "#94A0B0",
                         
                     }
                 ]
@@ -111,7 +121,6 @@ export default class Motor extends Component {
                     ref={this.chartRef}
                 />
             </div>
-            <ProgChart/>
             <Ap/>
             </div>
         )

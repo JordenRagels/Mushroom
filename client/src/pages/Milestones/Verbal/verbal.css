@@ -1,5 +1,9 @@
 h1{
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+
 }
 h6{
     text-align: center;
@@ -8,4 +12,70 @@ h6{
 .ms{
     text-align: left;
     margin-left: 22%;
+}
+
+h1{
+    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-style: inherit;
+    padding:50px;
+    background-color: #D2C4C3;
+    text-decoration: black underline;
+    border-radius: 5%;
+}
+
+.line.tickline{
+    color: black
+}
+.cogLog{
+    background-color: #D2C4C3;
+    font-family: 'Arial Narrow', Arial, sans-serif ;
+}
+
+.n{
+    background-color: #D2C4C3;
+    font-family: 'Arial Narrow', Arial, sans-serif ;
+    text-align: center;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding:2%;
+    border-radius: 5%;
+    
+}
+.background{
+    background-color: #D2C4C3;
+    font-family: 'Arial Narrow', Arial, sans-serif ;
+    border: 10px solid #9c9c91;
+    outline: solid 5px #9c9c91;
+    outline-offset: -20px;
+}
+
+
+
+.btn-success{
+background-color: #94A0B0;
+border-COLOR: #A2B9BF;
+text-align: center;
+
+}
+.btn-success:hover{
+background-color:#A2B9BF ;
+ border-color: #94A0B0;
+}
+
+.btn-success:active{
+    background-color:#A2B9BF ;
+    border-color: #94A0B0;
+}
+.btn-success:focus{
+    background-color:#A2B9BF ;
+    border-color: #94A0B0;
+
+}
+.btn-success:visited{
+    background-color:#A2B9BF ;
+    border-color: #94A0B0;
+}
+.btn-success:focus-within{
+    background-color:#A2B9BF ;
+    border-color: #94A0B0;
 }

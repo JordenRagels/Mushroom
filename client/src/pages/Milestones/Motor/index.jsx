@@ -3,7 +3,6 @@ import "./motor.css";
 import Chart from "chart.js";
 import { Navigations } from '../../../components/Navigations/index';
 import Ap from './motorLog';
-import ProgChart from './progress'
 
 const barOptions_stacked = {
     tooltips: {
@@ -81,12 +80,13 @@ export default class Motor extends Component {
                     {
 
                         data: [2, 3, 4, 4, 4, 5, 5, 5, 6, 9, 11],
-                        backgroundColor: "white"
+                        backgroundColor: '#D2C4C3',
+                        color: "#D2C4C3"
                     },
                     {
 
                         data: [2, 2, 2, 2, 3, 5, 6, 6, 6, 3, 1],
-                        backgroundColor: "red",
+                        backgroundColor: "#94A0B0",
 
                     }
                 ]
@@ -112,7 +112,6 @@ export default class Motor extends Component {
                         ref={this.chartRef}
                     />
                 </div>
-                <ProgChart/>,
                 <Ap/>
             </div>
         )

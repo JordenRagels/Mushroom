@@ -3,8 +3,6 @@ import "./verbal.css";
 import { Navigations } from '../../../components/Navigations/index';
 import Chart from "chart.js";
 import Ap from './verbalLog'
-import ProgChart from './progress';
-
 
 const barOptions_stacked = {
     tooltips: {
@@ -85,13 +83,14 @@ export default class Verbal extends Component {
                     {
 
                         data: [1, 1, 3, 3, 3, 6, 8, 9, 9, 9, 10, 11],
-                        backgroundColor: "white",
+                        backgroundColor: "#D2C4C3",
+                        color: '#D2C4C3',
                         label: "Age in Months",
                     },
                     {
 
-                        data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2,],
-                        backgroundColor: "red",
+                        data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2,1],
+                        backgroundColor: "#94A0B0",
 
 
                     }
@@ -112,16 +111,15 @@ export default class Verbal extends Component {
                 <div className="heading">
                     <h1>Verbal Skills</h1>
                 </div>
-                <h6 className="ms">Milestones</h6>
                 <div className="n">
                     <canvas
                         id="myChart"
                         ref={this.chartRef}
                     />
                     <h6>Age in Months</h6>
-                </div>
-                <ProgChart />
+                </div>     
                 <Ap />
+          
             </div>
         )
     }
