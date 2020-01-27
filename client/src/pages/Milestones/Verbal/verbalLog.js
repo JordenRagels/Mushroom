@@ -3,67 +3,67 @@ import React, { useState } from "react";
 
 function Ap() {
   const [aState, setAState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Coos and Gurgles"],
     time: ''
   });
   const [bState, setBState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Turns Head Toward Sounds"],
     time: ''
   });
   const [cState, setCState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Simple Babbles"],
     time: ''
   });
   const [dState, setDState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Attempts to Copy Sounds with Babbles"],
     time: ''
   });
   const [eState, setEState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Develops Distinct Cries Depending on Needs (Hunger vs Pain)"],
     time: ''
   });
   const [fState, setFState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Strins Vowels Together While Babbling"],
     time: ''
   });
   const [gState, setGState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Responds to Name"],
     time: ''
   });
   const [hState, setHState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Begins to Make Consonant Sounds"],
     time: ''
   });
   const [iState, setIState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Picks Up Things Between Thumb and Finger"],
     time: ''
   });
   const [jState, setJState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Copies Sounds such as Animal Noises"],
     time: ''
   });
   const [kState, setKState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Has a Wide Variety of Babbles"],
     time: ''
   });
   const [lState, setLState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Speaks Simple Wordsr"],
     time: ''
   });
   const [mState, setMState] = useState({
-    mood: "Not Yet",
+    accomlished: "Not Yet",
     name: ["Sounds Change in Tone to Mimic Speech"],
     time: ''
   });
@@ -77,13 +77,13 @@ function Ap() {
           {aState.name}
         </div>
         <div>
-          Status: {aState.mood}
+          Status: {aState.accomlished}
         </div>
         <div>
           {aState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setAState({ ...aState, mood: "Achieved", time:Date.now() })} className="btn-success">
+          <button onClick={() => setAState({ ...aState, accomlished: "Achieved", time:Date.now() })} className="btn-success">
             Milestone Achieved!
           </button>
         </div>
@@ -94,13 +94,13 @@ function Ap() {
           {bState.name}
         </div>
         <div>
-          Status: {bState.mood}
+          Status: {bState.accomlished}
         </div>
         <div>
           {bState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setBState({ ...bState, mood: "Milestone Achieved" , time: Date.now()})} className="btn-success">
+          <button onClick={() => setBState({ ...bState, accomlished: "Milestone Achieved" , time: Date.now()})} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -111,13 +111,13 @@ function Ap() {
           {cState.name}
         </div>
         <div>
-          Status: {cState.mood}
+          Status: {cState.accomlished}
         </div>
         <div>
           {cState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setCState({ ...cState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setCState({ ...cState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -128,13 +128,13 @@ function Ap() {
           {dState.name}
         </div>
         <div>
-          Status: {dState.mood}
+          Status: {dState.accomlished}
         </div>
         <div>
           {dState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setDState({ ...dState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setDState({ ...dState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -145,13 +145,13 @@ function Ap() {
           {eState.name}
         </div>
         <div>
-          Status: {eState.mood}
+          Status: {eState.accomlished}
         </div>
         <div>
           {eState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setEState({ ...eState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setEState({ ...eState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -162,13 +162,13 @@ function Ap() {
           {fState.name}
         </div>
         <div>
-          Status: {fState.mood}
+          Status: {fState.accomlished}
         </div>
         <div>
           {fState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setFState({ ...fState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setFState({ ...fState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -179,13 +179,13 @@ function Ap() {
           {gState.name}
         </div>
         <div>
-          Status: {gState.mood}
+          Status: {gState.accomlished}
         </div>
         <div>
           {gState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setGState({ ...gState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setGState({ ...gState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -196,13 +196,13 @@ function Ap() {
           {hState.name}
         </div>
         <div>
-          Status: {hState.mood}
+          Status: {hState.accomlished}
         </div>
         <div>
           {hState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setHState({ ...hState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setHState({ ...hState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -213,13 +213,13 @@ function Ap() {
           {iState.name}
         </div>
         <div>
-          Status: {iState.mood}
+          Status: {iState.accomlished}
         </div>
         <div>
           {iState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setIState({ ...iState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setIState({ ...iState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -230,13 +230,13 @@ function Ap() {
           {jState.name}
         </div>
         <div>
-          Status: {jState.mood}
+          Status: {jState.accomlished}
         </div>
         <div>
           {jState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setJState({ ...jState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setJState({ ...jState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -247,13 +247,13 @@ function Ap() {
           {kState.name}
         </div>
         <div>
-          Status: {kState.mood}
+          Status: {kState.accomlished}
         </div>
         <div>
           {kState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setKState({ ...kState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setKState({ ...kState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -264,13 +264,13 @@ function Ap() {
           {lState.name}
         </div>
         <div>
-          Status: {lState.mood}
+          Status: {lState.accomlished}
         </div>
         <div>
           {lState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setLState({ ...lState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setLState({ ...lState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>
@@ -281,13 +281,13 @@ function Ap() {
           {mState.name}
         </div>
         <div>
-          Status: {mState.mood}
+          Status: {mState.accomlished}
         </div>
         <div>
           {mState.time}
         </div>
         <div className="btn-group">
-          <button onClick={() => setMState({ ...mState, mood: "Milestone Achieved", time: Date.now() })} className="btn-success">
+          <button onClick={() => setMState({ ...mState, accomlished: "Milestone Achieved", time: Date.now() })} className="btn-success">
             Milestone Achieved!
   </button>
         </div>

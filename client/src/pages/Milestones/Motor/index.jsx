@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Header } from '../../../components';
 import "./motor.css";
-import App from '../../../App';
 import Chart from "chart.js";
-import { Bar } from 'react-chartjs-2';
+import { Navigations } from '../../../components/Navigations/index';
 import Ap from './motorLog';
 import ProgChart from './progress'
 
@@ -57,7 +55,7 @@ const barOptions_stacked = {
                 var meta = chartInstance.controller.getDatasetMeta(i);
                 Chart.helpers.each(meta.data.forEach(function (bar, index) {
                     let data = dataset.data[index];
-                    if (i == 0) {
+                    if (i === 0) {
                         ctx.fillText(data, 50, bar._model.y + 4);
                     } else {
                         ctx.fillText(data, bar._model.x - 25, bar._model.y + 4);
@@ -104,6 +102,7 @@ export default class Motor extends Component {
     render() {
         return (
             <div>
+                <Navigations/>
                 <div className="heading">
                     <h1>Motor Skills</h1>
                 </div>
