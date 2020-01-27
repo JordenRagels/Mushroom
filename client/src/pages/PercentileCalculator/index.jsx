@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
-import App from '../../App';
+import Per from './PC'
+import { Navigations } from '../../components/Navigations'
 
-export default class Percentile  extends Component {
-    
+export default class Percentile extends Component {
     render() {
         return (
-           <h1>n</h1>
+            <div>
+                <Navigations/>
+                <div className="heading">
+                    <Per />
+                </div>
+            </div>
         )
     }
 }
+
