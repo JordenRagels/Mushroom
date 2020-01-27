@@ -18,3 +18,12 @@ body{
     height: 100%;
     border: black double 10px
 }
+.dropdown-item{
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-weight: bolder;
+}
+.dropdown-menu{
+    background-color: #9c9c91;
+    border: black double 5px;
+}
