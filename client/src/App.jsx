@@ -71,12 +71,6 @@ class App extends Component {
 	render() {
 		return (
 			<div className="">
-
-				{/* Navbar on every page */}
-				<NavBar
-					_logout={this._logout}
-					loggedIn={this.state.loggedIn}
-				/>
 				{/*  Individual Things */}
 				<Route
 					exact

@@ -1,9 +1,10 @@
 import React from "react"
 import { Link } from 'react-router-dom';
-
+import './homenavs.css'
 function HomeNavs() {
+    
     return (
-        <nav className="navbar">
+        <nav className="innerNavbar">
                 <ul className="nav">
                 <li className="nav-item">
                         <Link to="/" className="nav-link">

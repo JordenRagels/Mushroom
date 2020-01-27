@@ -4,7 +4,7 @@ import './navigations.css'
 
 function NavigationsComponent() {
     return (
-        <nav className="navbar">
+        <nav className="navigations">
                 <ul className="nav">
                 <li className="nav-item">
                         <Link to="/" className="nav-link">

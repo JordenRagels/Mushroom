@@ -1,0 +1,20 @@
+.innerNavbar{
+    background-color: #9c9c91;
+   
+}
+.nav-item{
+    color: black;
+    font-weight: bolder;
+    margin: 50px;
+    text-align: center;
+    float: center;
+    border: black double 5px
+}
+body{
+    background-color: #9c9c91;
+     outline: solid 5px black;
+    outline-offset: -15px;
+    text-align: center;
+    height: 100%;
+    border: black double 10px
+}
