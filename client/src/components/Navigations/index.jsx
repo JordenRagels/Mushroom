@@ -6,11 +6,11 @@ import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
 function NavigationsComponent() {
     return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">Mushroom</Navbar.Brand>
+  <Navbar.Brand href="/">Mushroom</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="/home">Home</Nav.Link>
+      <Nav.Link href="/">Home </Nav.Link>
       <NavDropdown title="Milestones" id="collasible-nav-dropdown">
         <NavDropdown.Item href="/cognitive">Cognitive</NavDropdown.Item>
         <NavDropdown.Item href="/motor">Motor</NavDropdown.Item>

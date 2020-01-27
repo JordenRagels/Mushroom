@@ -98,7 +98,9 @@ function Ap() {
   return (
     <div>
       <h1>Verbal Milestones</h1>
+      <div className="doughnutChart">
       <Doughnut data={zState} />
+      </div>
       <div className='cards'>
 
         <br></br>

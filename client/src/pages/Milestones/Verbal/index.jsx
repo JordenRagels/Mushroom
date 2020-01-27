@@ -117,8 +117,9 @@ export default class Verbal extends Component {
                         ref={this.chartRef}
                     />
                     <h6>Age in Months</h6>
-                </div>
+                </div>     
                 <Ap />
+          
             </div>
         )
     }

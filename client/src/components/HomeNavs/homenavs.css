@@ -1,7 +1,4 @@
-.innerNavbar{
-    background-color: #9c9c91;
-   
-}
+
 .nav-item{
     color: black;
     font-weight: bolder;
@@ -24,6 +21,15 @@ body{
     font-weight: bolder;
 }
 .dropdown-menu{
-    background-color: #9c9c91;
+    background-color: #343a40;
     border: black double 5px;
+}
+
+.navbar-brand{
+    margin: 5px;
+    font-weight: bolder;
+    font-family: 'Arial Narrow', Arial, sans-serif ;
+}
+.navbar-toggler.collapsed{
+    margin: 10px;
 }
