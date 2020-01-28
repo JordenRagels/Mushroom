@@ -71,12 +71,6 @@ class App extends Component {
 	render() {
 		return (
 			<div className="">
-
-				{/* Navbar on every page */}
-				<NavBar
-					_logout={this._logout}
-					loggedIn={this.state.loggedIn}
-				/>
 				{/*  Individual Things */}
 				<Route
 					exact
@@ -149,16 +143,17 @@ class App extends Component {
 					}
 				/>
 
-<Route
+				<Route
 					exact
 					path="/percentile"
 					render={() =>
 						<Percentile></Percentile>
 					}
 				/>
+				
 			</div>
+
 		)
 	}
 }
-
-export default App
+export default App;
