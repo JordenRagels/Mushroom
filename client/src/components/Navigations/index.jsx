@@ -2,15 +2,14 @@ import React from "react"
 import { Link } from 'react-router-dom'
 import './navigations.css'
 import {Navbar, Nav, NavDropdown} from 'react-bootstrap';
-
-function NavigationsComponent() {
+import logo from './logo.jpg'
+function NavigationsComponent() { 
     return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="/">Mushroom</Navbar.Brand>
+  <Navbar.Brand href="/">Mushroom <image srcr={logo} alt="logo"/> </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="/">Home </Nav.Link>
       <NavDropdown title="Milestones" id="collasible-nav-dropdown">
         <NavDropdown.Item href="/cognitive">Cognitive</NavDropdown.Item>
         <NavDropdown.Item href="/motor">Motor</NavDropdown.Item>

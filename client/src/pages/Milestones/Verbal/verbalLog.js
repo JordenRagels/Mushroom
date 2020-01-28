@@ -96,7 +96,7 @@ function Ap() {
   console.log(zState.datasets[0].data);
 
   return (
-    <div>
+    <div className="verbalLog">
       <h1>Verbal Milestones</h1>
       <div className="doughnutChart">
       <Doughnut data={zState} />
