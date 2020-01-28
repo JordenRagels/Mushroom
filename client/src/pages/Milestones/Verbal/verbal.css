@@ -1,18 +1,3 @@
-h1{
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-
-}
-h6{
-    text-align: center;
-    margin-left: 40%;
-}
-.ms{
-    text-align: left;
-    margin-left: 22%;
-}
 
 h1{
     font-family: 'Arial Narrow', Arial, sans-serif ;
@@ -20,13 +5,12 @@ h1{
     padding:50px;
     background-color: #D2C4C3;
     text-decoration: black underline;
-    border-radius: 5%;
 }
 
 .line.tickline{
     color: black
 }
-.cogLog{
+.verbalLog{
     background-color: #D2C4C3;
     font-family: 'Arial Narrow', Arial, sans-serif ;
 }
@@ -35,11 +19,6 @@ h1{
     background-color: #D2C4C3;
     font-family: 'Arial Narrow', Arial, sans-serif ;
     text-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding:2%;
-    border-radius: 5%;
-    
 }
 .background{
     background-color: #D2C4C3;

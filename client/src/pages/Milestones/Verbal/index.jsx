@@ -108,6 +108,7 @@ export default class Verbal extends Component {
         return (
             <div>
                 <Navigations />
+                <div className="background">
                 <div className="heading">
                     <h1>Verbal Skills</h1>
                 </div>
@@ -116,10 +117,10 @@ export default class Verbal extends Component {
                         id="myChart"
                         ref={this.chartRef}
                     />
-                    <h6>Age in Months</h6>
                 </div>     
                 <Ap />
-          
+                <br></br>
+          </div>
             </div>
         )
     }

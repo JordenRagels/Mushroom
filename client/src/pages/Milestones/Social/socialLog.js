@@ -86,7 +86,7 @@ function Ap() {
 
 
   return (
-    <div>
+    <div className="socialLog">
       <h1>Social Milestones</h1>
       <Doughnut data={zState} />
       <div className='cards'>

@@ -112,8 +112,9 @@ export default class Motor extends Component {
         return (
             <div>
                 <Navigations/>
+                <div className="background">
             <div className="heading">
-            <h1>Motor Skills</h1>
+            <h1>Social Skills</h1>
             </div>
             <div className="n">
                 <canvas
@@ -122,6 +123,8 @@ export default class Motor extends Component {
                 />
             </div>
             <Ap/>
+            <br></br>
+            </div>
             </div>
         )
     }
