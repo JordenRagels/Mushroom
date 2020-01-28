@@ -6,14 +6,16 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 function HomeNavs() {
 
     return (
-        <div>
-            <h1>Mushroom</h1>
-            <NavDropdown title="Milestones" id="collasible-nav-dropdown">
+        <div className="navB">
+            <h1 className="title">Mushroom</h1>
+            <Navbar expand="lg">
+                <div className="a">
+            <NavDropdown title="Milestones">
                 <NavDropdown.Item className='item' href="/cognitive">Cognitive</NavDropdown.Item>
                 <NavDropdown.Item href="/motor">Motor</NavDropdown.Item>
                 <NavDropdown.Item href="/social">Social</NavDropdown.Item>
                 <NavDropdown.Item href="/verbal">Verbal</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown></div>
             <NavDropdown title="Sleeping & Eating Recomendations" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="/sleeping">Sleeping</NavDropdown.Item>
                 <NavDropdown.Item href="/eating">Eating</NavDropdown.Item>
@@ -26,6 +28,7 @@ function HomeNavs() {
                 <NavDropdown.Item href="/doctorSearch">Find a Pediatrician</NavDropdown.Item>
                 <NavDropdown.Item href="/meditation">Meditation</NavDropdown.Item>
             </NavDropdown>
+            </Navbar>
         </div>
     )
 }

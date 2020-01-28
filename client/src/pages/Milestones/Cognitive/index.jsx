@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./cognitive.css";
 import Chart from "chart.js";
 import Ap from './cogLog'
-import { Navigations } from '../../../components/Navigations/index'
+import { Navigations } from '../../../components/Navigations'
 
 const barOptions_stacked = {
     tooltips: {

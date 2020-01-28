@@ -19,10 +19,10 @@ class Eating extends Component {
                             <th>Number of Feedings Per Day</th>
                         </tr>
                     </thead>
-                    <br></br>
+
                     <tbody>
-                        <tr>
-                            <td>1</td>
+                        <tr >
+                            <td className="months">1</td>
                             <br></br>
                             <br></br>
                             <td>16-24</td>
@@ -33,9 +33,9 @@ class Eating extends Component {
                             <br></br>
                             <td>6-8</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>2</td>
+                            <td className="months">2</td>
                             <br></br>
                             <br></br>
                             <td>30</td>
@@ -46,9 +46,9 @@ class Eating extends Component {
                             <br></br>
                             <td>5-6</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>3</td>
+                            <td className="months">3</td>
                             <br></br>
                             <br></br>
                             <td>32-36</td>
@@ -59,9 +59,9 @@ class Eating extends Component {
                             <br></br>
                             <td>5-6</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>4</td>
+                            <td className="months">4</td>
                             <br></br>
                             <br></br>
                             <td>32-36</td>
@@ -72,9 +72,9 @@ class Eating extends Component {
                             <br></br>
                             <td>4-6</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>5</td>
+                            <td className="months">5</td>
                             <br></br>
                             <br></br>
                             <td>32-36</td>
@@ -85,9 +85,9 @@ class Eating extends Component {
                             <br></br>
                             <td>4-6</td>
                         </tr>
-                        <br></br>
+
                         <tr colSpan="2">
-                            <td>6</td>
+                            <td className="months">6</td>
                             <br></br>
                             <br></br>
                             <td>28-32</td>
@@ -98,9 +98,9 @@ class Eating extends Component {
                             <br></br>
                             <td>3-5</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>7</td>
+                            <td className="months">7</td>
                             <br></br>
                             <br></br>
                             <td>30-32</td>
@@ -111,9 +111,9 @@ class Eating extends Component {
                             <br></br>
                             <td>3-5</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>8</td>
+                            <td className="months">8</td>
                             <br></br>
                             <br></br>
                             <td>30-32</td>
@@ -124,9 +124,9 @@ class Eating extends Component {
                             <br></br>
                             <td>3-5</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>9</td>
+                            <td className="months">9</td>
                             <br></br>
                             <br></br>
                             <td>30-32</td>
@@ -137,9 +137,9 @@ class Eating extends Component {
                             <br></br>
                             <td>3-5</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>10</td>
+                            <td className="months">10</td>
                             <br></br>
                             <br></br>
                             <td>24-30</td>
@@ -150,9 +150,9 @@ class Eating extends Component {
                             <br></br>
                             <td>3-4</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>11</td>
+                            <td className="months">11</td>
                             <br></br>
                             <br></br>
                             <td>24-30</td>
@@ -163,9 +163,9 @@ class Eating extends Component {
                             <br></br>
                             <td>3-4</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>12</td>
+                            <td className="months">12</td>
                             <br></br>
                             <br></br>
                             <td>24-30</td>
@@ -179,8 +179,6 @@ class Eating extends Component {
                        
                     </tbody>
                 </table>
-                <div className="weightCalc">
-                </div>
 
             </div>
         )

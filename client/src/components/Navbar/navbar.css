@@ -1,8 +1,9 @@
 .navbar{
-    background-color: #9c9c91;
+    background-color: #988f8e;
     outline: solid 5px black;
     outline-offset: -15px;
 }
+
 .nav-link{
     color: black;
     font-weight: bolder;
