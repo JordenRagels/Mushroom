@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
 import axios from "axios";
-=======
-import { Doughnut } from 'react-chartjs-2';
-import axios from 'axios';
->>>>>>> 22e0a26f2ebfd61b53d95e9142d02a12344d7844
 
 function App() {
   const [aState, setAState] = useState({
