@@ -116,6 +116,13 @@ export default class Motor extends Component {
                 <Ap/>
                 <br></br>
             </div>
+            <footer>
+            Mushroom
+<div className="Srcs">
+Information Sourced from: The World Health Organization & The Center for Disease Contorl
+</div>
+<br></br>
+            </footer>
             </div>
         )
     }

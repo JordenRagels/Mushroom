@@ -27,8 +27,15 @@ function HomeNavs() {
                 <NavDropdown.Item href="/doctorSearch">Find a Pediatrician</NavDropdown.Item>
                 <NavDropdown.Item href="/meditation">Meditation</NavDropdown.Item>
             </NavDropdown>
-            </Navbar>
+            </Navbar>      <footer>
+        Mushroom
+<div className="Srcs">
+Information Sourced from: The World Health Organization & The Center for Disease Contorl
+</div>
+<br></br>
+        </footer>
         </div>
+  
     )
 }
 

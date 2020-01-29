@@ -11,6 +11,13 @@ class doctorSearch extends Component {
             <Navigations/>
             <h1 className="PS">Pediatrician Search</h1>
             <Ap/>
+            <footer>
+            Mushroom
+<div className="Srcs">
+Information Sourced from: The World Health Organization & The Center for Disease Contorl
+</div>
+<br></br>
+            </footer>
         </div>
    
     )

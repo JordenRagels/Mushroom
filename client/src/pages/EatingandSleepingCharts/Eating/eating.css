@@ -1,18 +1,18 @@
 thead{
     font-weight: bolder;
     border-bottom: black solid 5px;
-    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     border-top: black solid 7px;
 }
 th{
     border: black solid 2px;
-    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 td{
     border-left: black solid 2px;
     border-right: black solid 2px;
     border-bottom: black solid 1px;
-    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 table{
     width: 100%;

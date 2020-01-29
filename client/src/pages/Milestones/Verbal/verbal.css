@@ -1,6 +1,6 @@
 
 h1{
-    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     font-style: inherit;
     padding:50px;
     background-color: #D2C4C3;
@@ -12,17 +12,17 @@ h1{
 }
 .verbalLog{
     background-color: #D2C4C3;
-    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 
 .n{
     background-color: #D2C4C3;
-    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     text-align: center;
 }
 .background{
     background-color: #D2C4C3;
-    font-family: 'Arial Narrow', Arial, sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     border: 10px solid #988f8e;
     outline: solid 5px #988f8e;
     outline-offset: -20px;

@@ -23,10 +23,10 @@ function NavigationsComponent() {
             </NavDropdown>
             <NavDropdown title="Percentile Calculators" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/weightCalc">Weight Percentile Calculator</NavDropdown.Item>
-              <NavDropdown.Item href="/lengthCalc">Length Percentile Calculator</NavDropdown.Item>
+              <NavDropdown.Item href="/percentile">Length Percentile Calculator</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Parent Resources" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/doctorSearch">Find a Pediatrician</NavDropdown.Item>
+              <NavDropdown.Item href="/">Find a Pediatrician</NavDropdown.Item>
               <NavDropdown.Item href="/meditation">Meditation</NavDropdown.Item>
             </NavDropdown>
           </Nav>
