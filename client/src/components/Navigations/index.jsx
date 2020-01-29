@@ -7,7 +7,7 @@ function NavigationsComponent() {
   return (
     <div className="navB">
       <Navbar collapseOnSelect expand="lg"  variant="dark">
-        <Navbar.Brand href="/">Mushroom <image srcr={logo} alt="logo" /> </Navbar.Brand>
+        <Navbar.Brand>Mushroom  </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">

@@ -13,6 +13,8 @@ import Eating from "./pages/EatingandSleepingCharts/Eating"
 import Sleeping from "./pages/EatingandSleepingCharts/Sleeping"
 import Log from "./pages/Log"
 import Percentile from './pages/PercentileCalculator'
+import DoctorSearch from './pages/DoctorSearch'
+import doctorSearch from './pages/DoctorSearch'
 class App extends Component {
 	constructor(props) {
 		super(props)
@@ -148,6 +150,13 @@ class App extends Component {
 					path="/percentile"
 					render={() =>
 						<Percentile></Percentile>
+					}
+				/>
+				<Route
+					exact
+					path="/doctorSearch"
+					render={() =>
+						<DoctorSearch></DoctorSearch>
 					}
 				/>
 				

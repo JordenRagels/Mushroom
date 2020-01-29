@@ -10,6 +10,7 @@ export default class Percentile extends Component {
                 <div className="heading">
                     <Per />
                 </div>
+                <a href="file:///C:/Users/Mary/Desktop/Homework/Mush/Mushroom/client/src/pages/PercentileCalculator/Length.html">Link</a>
             </div>
         )
     }

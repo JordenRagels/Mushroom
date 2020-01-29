@@ -37,13 +37,17 @@ body{
 
 .title{
     background-color:#988f8e ;
+    border-bottom: black solid 5px;
 }
 
-.a{
-    width: 500px
-  
+
+h1{
+    background-color:#988f8e ;
 }
-#collasible-nav-dropdown{
-    width:100%
-    
+.navbar{
+    margin: 20px;
+}
+.Homenav{
+height: 100%
+
 }
