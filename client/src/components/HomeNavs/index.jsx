@@ -6,9 +6,10 @@ import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 function HomeNavs() {
 
     return (
-        <div>
-            <h1>Mushroom</h1>
-            <NavDropdown title="Milestones" id="collasible-nav-dropdown">
+        <div className="Homenav">
+            <h1 className="title">Mushroom</h1>
+            <Navbar expand="lg">
+            <NavDropdown title="Milestones"  id="collasible-nav-dropdown">
                 <NavDropdown.Item className='item' href="/cognitive">Cognitive</NavDropdown.Item>
                 <NavDropdown.Item href="/motor">Motor</NavDropdown.Item>
                 <NavDropdown.Item href="/social">Social</NavDropdown.Item>
@@ -26,7 +27,15 @@ function HomeNavs() {
                 <NavDropdown.Item href="/doctorSearch">Find a Pediatrician</NavDropdown.Item>
                 <NavDropdown.Item href="/meditation">Meditation</NavDropdown.Item>
             </NavDropdown>
+            </Navbar>      <footer>
+        Mushroom
+<div className="Srcs">
+Information Sourced from: The World Health Organization & The Center for Disease Contorl
+</div>
+<br></br>
+        </footer>
         </div>
+  
     )
 }
 
