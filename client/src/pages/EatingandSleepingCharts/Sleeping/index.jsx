@@ -19,10 +19,10 @@ class Sleeping extends React.Component {
                             <th>Total Hours of Daytime Sleep</th>
                         </tr>
                     </thead>
-                    <br></br>
+
                     <tbody>
                         <tr>
-                            <td>1</td>
+                            <td className="months">1</td>
                             <br></br>
                             <br></br>
                             <td>16</td>
@@ -33,9 +33,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>7-8</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>2</td>
+                            <td className="months">2</td>
                             <br></br>
                             <br></br>
                             <td>12</td>
@@ -46,9 +46,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>7-8</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>3</td>
+                            <td className="months">3</td>
                             <br></br>
                             <br></br>
                             <td>15</td>
@@ -59,9 +59,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>5-6</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>4</td>
+                            <td className="months">4</td>
                             <br></br>
                             <br></br>
                             <td>15</td>
@@ -72,9 +72,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>5-6</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>5</td>
+                            <td className="months">5</td>
                             <br></br>
                             <br></br>
                             <td>15</td>
@@ -85,9 +85,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>5-6</td>
                         </tr>
-                        <br></br>
+ 
                         <tr colSpan="2">
-                            <td>6</td>
+                            <td className="months">6</td>
                             <br></br>
                             <br></br>
                             <td>14</td>
@@ -98,9 +98,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>4</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>7</td>
+                            <td className="months">7</td>
                             <br></br>
                             <br></br>
                             <td>14</td>
@@ -111,9 +111,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>4</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>8</td>
+                            <td className="months">8</td>
                             <br></br>
                             <br></br>
                             <td>14</td>
@@ -124,9 +124,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>4-3</td>
                         </tr>
-                        <br></br>
+
                         <tr>
-                            <td>9</td>
+                            <td className="months">9</td>
                             <br></br>
                             <br></br>
                             <td>14</td>
@@ -137,35 +137,9 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>4-3</td>
                         </tr>
-                        <br></br>
+     
                         <tr>
-                            <td>10</td>
-                            <br></br>
-                            <br></br>
-                            <td>14</td>
-                            <br></br>
-                            <br></br>
-                            <td>11</td>
-                            <br></br>
-                            <br></br>
-                            <td>3</td>
-                        </tr>
-                        <br></br>
-                        <tr>
-                            <td>11</td>
-                            <br></br>
-                            <br></br>
-                            <td>14</td>
-                            <br></br>
-                            <br></br>
-                            <td>11</td>
-                            <br></br>
-                            <br></br>
-                            <td>3</td>
-                        </tr>
-                        <br></br>
-                        <tr>
-                            <td>12</td>
+                            <td className="months">10</td>
                             <br></br>
                             <br></br>
                             <td>14</td>
@@ -177,8 +151,39 @@ class Sleeping extends React.Component {
                             <td>3</td>
                         </tr>
 
+                        <tr>
+                            <td className="months">11</td>
+                            <br></br>
+                            <br></br>
+                            <td>14</td>
+                            <br></br>
+                            <br></br>
+                            <td>11</td>
+                            <br></br>
+                            <br></br>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td className="months">12</td>
+                            <br></br>
+                            <br></br>
+                            <td>14</td>
+                            <br></br>
+                            <br></br>
+                            <td>11</td>
+                            <br></br>
+                            <br></br>
+                            <td>3</td>
+                        </tr>
                     </tbody>
                 </table>
+                <footer>
+            Mushroom
+<div className="Srcs">
+Information Sourced from: The World Health Organization & The Center for Disease Contorl
+</div>
+<br></br>
+            </footer>
             </div>
         )
     }

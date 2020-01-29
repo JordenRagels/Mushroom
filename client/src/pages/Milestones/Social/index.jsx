@@ -3,6 +3,8 @@ import { Navigations } from '../../../components/Navigations/index';
 import "./social.css";
 import Chart from "chart.js";
 import Ap from './socialLog';
+import { Footer } from '../../../components/Footer';
+
 
 const barOptions_stacked = {
     tooltips: {
@@ -125,6 +127,13 @@ export default class Motor extends Component {
             <Ap/>
             <br></br>
             </div>
+            <footer>
+            Mushroom
+<div className="Srcs">
+Information Sourced from: The World Health Organization & The Center for Disease Contorl
+</div>
+<br></br>
+            </footer>
             </div>
         )
     }

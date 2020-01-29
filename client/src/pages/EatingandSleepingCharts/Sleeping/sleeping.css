@@ -1,7 +1,29 @@
+thead{
+    font-weight: bolder;
+    border-bottom: #c2d9dd solid 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    border-top: #c2d9dd solid 5px;
+}
 th{
-    margin: 80px;
-    text-align: center;
+    border: #c2d9dd solid 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: #d5c3c0
 }
 td{
-    text-align: center;
+    border-left: #c2d9dd solid 2px;
+    border-right:  #c2d9dd solid 2px;
+    background-color: #c2d9dd ;
+    border-bottom:  #c2d9dd solid 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: #d5c3c0 ;
+}
+table{
+    width: 100%;
+
+}
+.months{
+    font-weight: bolder
+}
+.navbar{
+    border-bottom: 7px solid black;
 }
