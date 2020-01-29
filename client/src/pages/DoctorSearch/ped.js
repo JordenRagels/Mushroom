@@ -28,6 +28,7 @@ function Ap() {
     });
     return (
         <div>
+            <input placeholder="Please put in your zip code"></input>
             <div className='result1'>
                 {pedState1.name}
                 <br></br>

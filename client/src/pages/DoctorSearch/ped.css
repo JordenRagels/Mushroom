@@ -33,3 +33,6 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 .PS{
     border:black double 5px;
 }
+input{
+    width: 50%
+}
