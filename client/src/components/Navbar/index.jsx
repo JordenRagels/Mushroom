@@ -4,6 +4,7 @@ import './navbar.css'
 
 function NavBarComponent({ loggedIn, _logout }) {
     return (
+     
         <nav className="navbar">
             {loggedIn ?
                 <ul className="nav">
