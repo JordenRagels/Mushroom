@@ -19,6 +19,8 @@ h1{
     background-color: #D2C4C3;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     text-align: center;
+    width: 75%;
+    margin: auto;
 }
 .background{
     background-color: #D2C4C3;
@@ -26,6 +28,8 @@ h1{
     border: 10px solid #988f8e;
     outline: solid 5px #988f8e;
     outline-offset: -20px;
+    width: 90%;
+    margin: auto;
 }
 
 

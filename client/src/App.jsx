@@ -15,6 +15,7 @@ import Log from "./pages/Log"
 import Percentile from './pages/PercentileCalculator'
 import DoctorSearch from './pages/DoctorSearch'
 import doctorSearch from './pages/DoctorSearch'
+import Emergency from './pages/Emergency'
 class App extends Component {
 	constructor(props) {
 		super(props)
@@ -159,7 +160,13 @@ class App extends Component {
 						<DoctorSearch></DoctorSearch>
 					}
 				/>
-				
+				<Route
+				exact
+				path="/emergency"
+				render={()=>
+				<Emergency/>
+				}
+				/>
 			</div>
 
 		)

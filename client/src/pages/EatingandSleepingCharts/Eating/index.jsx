@@ -7,6 +7,7 @@ class Eating extends Component {
         return (
             <div>
                 <Navigations/>
+                <div className="table">
                 <table>
                     <thead>
                         <tr>
@@ -179,6 +180,7 @@ class Eating extends Component {
                        
                     </tbody>
                 </table>
+                </div>
                 <footer>
             Mushroom
 <div className="Srcs">

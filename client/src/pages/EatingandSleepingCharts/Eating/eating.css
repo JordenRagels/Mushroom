@@ -14,8 +14,9 @@ td{
     border-bottom: black solid 1px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
-table{
-    width: 100%;
+.table{
+    width: 90%;
+    margin: auto;
 }
 .months{
     font-weight: bolder

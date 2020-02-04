@@ -1,21 +1,22 @@
+.home{
+    color: blue;
+    font-weight: bolder;
+    text-align: center;
+    margin: 2px;
 
+}
 .nav-item{
     color: black;
     font-weight: bolder;
-    margin: 20px;
     text-align: center;
-    float: center;
-    border: black double 5px;
-    margin-bottom: 75px;
-    width: 100%;
+    margin: 2px;
+ 
 }
 body{
     background-color:  #988f8e;
-     outline: solid 5px black;
-    outline-offset: -12px;
     text-align: center;
     height: 100%;
-    border: black double 10px 
+    
 }
 .dropdown-item{
     color: white;
@@ -24,8 +25,8 @@ body{
 }
 .dropdown-menu{
     background-color:#988f8e ;
-    border: black double 5px;
-    width: 100%;
+    border: black double 1px;
+    width: 110%;
 }
 
 .navbar-brand{
@@ -37,20 +38,20 @@ body{
 
 .title{
     background-color:#988f8e ;
-    border-bottom: black solid 5px;
+    border-bottom: black solid 1px;
 }
 
 
 h1{
     background-color:#988f8e ;
 }
-.navbar{
-    margin: 20px;
-}
+
 .Homenav{
 height: 100%;
-color: black
+color: black;
+width: 75%
 }
-.dropdown-toggle{
-    color:black
+.navB{
+    padding: 8px;
+    padding-top: 10px;
 }

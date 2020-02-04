@@ -1,3 +1,8 @@
 .navB{
     max-height: max-content;
+    width: 75%;
+    margin: auto;
+}
+.dropdown.nav-item{
+    margin:5px;
 }

@@ -6,8 +6,8 @@ import logo from './logo.jpg'
 function NavigationsComponent() {
   return (
     <div className="navB">
-      <Navbar collapseOnSelect expand="lg"  variant="dark">
-        <Navbar.Brand>Mushroom  </Navbar.Brand>
+      <Navbar expand="lg">
+        <Navbar.Brand href="/">Mushroom  </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
@@ -21,14 +21,14 @@ function NavigationsComponent() {
               <NavDropdown.Item href="/sleeping">Sleeping</NavDropdown.Item>
               <NavDropdown.Item href="/eating">Eating</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Percentile Calculators" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/percentile">Weight Percentile Calculator</NavDropdown.Item>
-              <NavDropdown.Item href="/percentile">Length Percentile Calculator</NavDropdown.Item>
+            <NavDropdown title="Percentile Calculators          " id="collasible-nav-dropdown">
+              <NavDropdown.Item href="/percentile">Weight Percentile<br/>Calculator</NavDropdown.Item>
+              <NavDropdown.Item href="/percentile">Length Percentile<br/> Calculator</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Parent Resources" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/">Find a Pediatrician</NavDropdown.Item>
+              <NavDropdown.Item href="/">Find a <br/>Pediatrician</NavDropdown.Item>
               <NavDropdown.Item href="/meditation">Meditation</NavDropdown.Item>
-            </NavDropdown>
+             <NavDropdown.Item href="/emergency">Emergency</NavDropdown.Item></NavDropdown>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
