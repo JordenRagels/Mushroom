@@ -6,7 +6,7 @@ class Sleeping extends React.Component {
     render() {
         return (
             <div>
-                <Navigations/>
+                <Navigations />
                 <table>
                     <thead>
                         <tr>
@@ -85,7 +85,7 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>5-6</td>
                         </tr>
- 
+
                         <tr colSpan="2">
                             <td className="months">6</td>
                             <br></br>
@@ -137,7 +137,7 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>4-3</td>
                         </tr>
-     
+
                         <tr>
                             <td className="months">10</td>
                             <br></br>
@@ -177,13 +177,15 @@ class Sleeping extends React.Component {
                         </tr>
                     </tbody>
                 </table>
+
+
                 <footer>
-            Mushroom
-<div className="Srcs">
-Information Sourced from: The World Health Organization & The Center for Disease Contorl
-</div>
-<br></br>
-            </footer>
+                    Mushroom
+                    <div className="Srcs">
+                        Information Sourced from: The World Health Organization & The Center for Disease Contorl
+                    </div>
+                    <br></br>
+                </footer>
             </div>
         )
     }

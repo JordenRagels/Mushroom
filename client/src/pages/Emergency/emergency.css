@@ -3,7 +3,7 @@
     border: black solid 3px;
     margin-top: 1%;
 }
-.chocking{
+.choking{
     width:75%
 }
 .phone-numbers{
@@ -33,13 +33,13 @@
     background-color: white;
     padding-top: 1%;
     padding-bottom: 1%;
-    margin:1%;
+  margin-left: 17%;
     border: black solid 3px;
     margin-top: 1%;
     text-align: left;
     text-indent: 5px;
     font-weight: bold;
-    margin-left: 15%;
+    float: left;
 }
 .medications{
     height: 200px;
@@ -47,11 +47,16 @@
     background-color: white;
     padding-top: 1%;
     padding-bottom: 1%;
-    margin: 1%;
+    margin-right: 17%;
     border: black solid 3px;
     margin-top: 1%;
     text-align: left;
     text-indent: 5px;
     font-weight: bold;
-    margin-left: 15%;
+    float: right;
+    margin-bottom: 5%;
+}
+.rowC{
+    width:100%;
+    margin: auto;
 }

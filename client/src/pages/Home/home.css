@@ -1,0 +1,88 @@
+.milestones-home{
+    height: 200px;
+    width: 30%;
+    background-color: #B2B2A9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  margin-left: 17%;
+    border: black solid 3px;
+    margin-top: 1%;
+    text-align: left;
+    text-indent: 5px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    border-radius: 30%;
+}
+
+.sleepingandeating-home{
+    height: 200px;
+    width: 30%;
+    background-color: #B2B2A9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  margin-left: 17%;
+    border: black solid 3px;
+    margin-top: 1%;
+    text-align: left;
+    text-indent: 5px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    border-radius: 30%;
+}
+
+.percentile-home{
+    height: 200px;
+    width: 30%;
+    background-color: #B2B2A9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  margin-left: 17%;
+    border: black solid 3px;
+    margin-top: 1%;
+    text-align: left;
+    text-indent: 5px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    border-radius: 30%;
+}
+.parentresources-home{
+    height: 200px;
+    width: 30%;
+    background-color: #B2B2A9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  margin-left: 17%;
+    border: black solid 3px;
+    margin-top: 1%;
+    text-align: left;
+    text-indent: 5px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    border-radius: 30%;
+}
+.emergency-home{
+    height: 75px;
+    width: 30%;
+    background-color: #B2B2A9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  margin-left: 17%;
+    border: black solid 3px;
+    margin-top: 1%;
+    text-align: left;
+    text-indent: 5px;
+    font-weight: bold;
+    float: left;
+    text-align: center;
+    border-radius: 30%;
+    font-size: x-large;
+}
+a{
+    margin: 10px;
+    color:black;
+    font-size: larger;
+}
