@@ -1,11 +1,14 @@
-import React from "react"
-function FooterComponent(){
+import { Container, Col, Row } from "react-bootstrap";
+import React from "react";
 
+function FooterComponent() {
     return (
+        <div>
 
-        <footer>this is the foot</footer>
 
+        </div>
     )
-
+  
 }
-export const Footer = React.memo(FooterComponent);
+
+export const Foot = React.memo(FooterComponent);

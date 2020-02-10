@@ -5,7 +5,7 @@ import AllergiesList from "./allergies";
 import AllergiesItems from "./AllergiesItems";
 import MedsList from "./meds";
 import MedsItems from "./medsItems";
-
+import { Foot } from "../../components/Footer"
 class Emergency extends Component {
     render() {
         return (
@@ -39,13 +39,35 @@ class Emergency extends Component {
                                 <MedsList />
                             </div>
                             <div className="medsList">
-
                             </div>
                         </div>
                     </div>
                 </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
 
+                <div className="footer">
 
+                    <footer>
+                        <div className="footer-main">
+                            <h5 className="footer-head">Mushroom</h5>
+                            <div className="row-footer">
+                                <h6 className="footer-info">Information Sourced from the Center for Disease Control and The World Health Organization</h6>
+                            </div>
+                        </div>
+                        <div className="footer-copyright">
+                            <h6 > &copy; 2020 Copyright: Mushroom</h6>
+                        </div>
+                    </footer>
+                </div>
             </div>
         )
     }

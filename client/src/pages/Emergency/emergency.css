@@ -60,3 +60,30 @@
     width:100%;
     margin: auto;
 }
+
+.footer{
+    height: 100px;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: black 5px double;
+    background-color: #B2B2A9;
+}
+.footer-head{
+    text-decoration: underline;
+    margin: 5px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+.footer-info{
+    font-size: small;
+    float: auto;
+}
+.footer-copyright{
+    font-size: x-small;
+    text-align: center;
+    margin-top: 10px;
+    background-color:#A7A79D ;
+    margin-top: 21px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
