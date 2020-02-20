@@ -1,6 +1,6 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Input, TextArea, FormBtn } from '../../components/Form';
+//import { render } from 'react-dom';
+//import { Input, TextArea, FormBtn } from '../../components/Form';
 export class Per extends React.Component {
 
     render() {

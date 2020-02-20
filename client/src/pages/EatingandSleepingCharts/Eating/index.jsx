@@ -1,12 +1,12 @@
 import "./eating.css";
 import React, { Component } from 'react';
-import { Navigations } from '../../../components/Navigations/index';
+import { NavBar } from '../../../components/Navbar'
 
 class Eating extends Component {
     render() {
         return (
             <div>
-                <Navigations/>
+                <NavBar />
                 <table>
                     <thead>
                         <tr>

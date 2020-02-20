@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Doughnut } from 'react-chartjs-2';
 import axios from 'axios';
+//import { tsPropertySignature } from "@babel/types";
+
+// const Name = prop => <div>{prop.children}</div>
 
 function App() {
   const [aState, setAState] = useState({

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./motor.css";
 import Chart from "chart.js";
-import { Navigations } from '../../../components/Navigations/index';
+import { NavBar } from '../../../components/Navbar'
 import Ap from './motorLog';
 
 const barOptions_stacked = {
@@ -102,7 +102,7 @@ export default class Motor extends Component {
     render() {
         return (
             <div>
-                <Navigations/>
+                <NavBar />
                 <div className="background">
                 <div className="heading">
                     <h1>Motor Skills</h1>

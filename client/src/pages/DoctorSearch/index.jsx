@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
-import { Navigations } from '../../components/Navigations/index';
-import { Input, FormBtn } from '../../components/Form'
+import { NavBar } from '../../components/Navbar'
 import Ap from './ped';
+import { Footer } from '../../components/Footer'
 
 class doctorSearch extends Component {
    render(){
 
     return (
         <div>
-            <Navigations/>
+            <NavBar/>
             <h1 className="PS">Pediatrician Search</h1>
             <Ap/>
-            <footer>
-            Mushroom
-<div className="Srcs">
-Information Sourced from: The World Health Organization & The Center for Disease Contorl
-</div>
-<br></br>
-            </footer>
+            <Footer/>
         </div>
    
     )

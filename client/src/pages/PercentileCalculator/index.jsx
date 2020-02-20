@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Per from './PC'
-import { Navigations } from '../../components/Navigations'
+import { NavBar } from '../../components/Navbar'
 
 export default class Percentile extends Component {
     render() {
         return (
             <div>
-                <Navigations/>
+                <NavBar/>
                 <div className="heading">
                     <h2>Comming soon!</h2>
                     <Per />

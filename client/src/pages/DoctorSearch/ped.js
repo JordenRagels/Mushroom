@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ped.css'
+
 function Ap() {
     const [pedState1, setPedState1] = useState({
         name: "",

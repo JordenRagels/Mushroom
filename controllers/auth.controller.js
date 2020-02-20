@@ -41,7 +41,7 @@ router.post('/login',
         if (cleanUser.password) {
             delete cleanUser.password
         }
-        res.json({ user: cleanUser })
+        return res.json({ user: cleanUser })
     }
 )
 

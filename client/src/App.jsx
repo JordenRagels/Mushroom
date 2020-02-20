@@ -14,7 +14,7 @@ import Sleeping from "./pages/EatingandSleepingCharts/Sleeping"
 import Log from "./pages/Log"
 import Percentile from './pages/PercentileCalculator'
 import DoctorSearch from './pages/DoctorSearch'
-import doctorSearch from './pages/DoctorSearch'
+import { Footer } from '../src/components/Footer';
 class App extends Component {
 	constructor(props) {
 		super(props)
@@ -67,12 +67,20 @@ class App extends Component {
 						user: response.data.user
 					})
 				}
+				else {
+					console.log('Need error message');
+				}
 			})
 	}
 
 	render() {
 		return (
 			<div className="">
+			{/* Navbar on every page */}
+			<NavBar
+					_logout={this._logout}
+					loggedIn={this.state.loggedIn}
+				/>
 				{/*  Individual Things */}
 				<Route
 					exact
@@ -159,6 +167,7 @@ class App extends Component {
 						<DoctorSearch></DoctorSearch>
 					}
 				/>
+				<Footer/>
 				
 			</div>
 
