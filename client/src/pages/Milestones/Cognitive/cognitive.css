@@ -3,7 +3,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     font-style: inherit;
     padding:50px;
-    background-color: #D2C4C3;
+    background-color: #fefdfc;
     text-decoration: black underline;
 }
 
@@ -11,22 +11,22 @@ h1{
     color: black
 }
 .cogLog{
-    background-color: #D2C4C3;
+    background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 
 .n{
-    background-color: #D2C4C3;
+    background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     text-align: center;
     width: 75%;
     margin: auto;
 }
 .background{
-    background-color: #D2C4C3;
+    background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     border: 10px solid #988f8e;
-    outline: solid 5px #988f8e;
+    background-color: #fefdfc;
     outline-offset: -20px;
     width: 90%;
     margin: auto;

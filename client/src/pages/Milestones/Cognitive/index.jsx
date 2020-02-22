@@ -84,12 +84,12 @@ export default class Cognitive extends Component {
                 datasets: [
                     {
                         data: [1, 2, 3, 4, 5, 6, 9, 9, 9, 9, 10, 10, 11, 11, 11, 11],
-                        backgroundColor: "#D2C4C3",
-                        color: '#D2C4C3'
+                        backgroundColor: "#fefdfc",
+                        color: "#fefdfc"
                     },
                     {
                         data: [1, 1, 2, 2, 5, 4, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1],
-                        backgroundColor: "#94A0B0",
+                        backgroundColor: "#48665f",
                     }
                 ]
             },
@@ -119,13 +119,20 @@ export default class Cognitive extends Component {
                 <Ap />
                 <br></br>
             </div>
-            <footer>
-            Mushroom
-<div className="Srcs">
-Information Sourced from: The World Health Organization & The Center for Disease Contorl
+            <div className="footer">
+
+<footer>
+    <div className="footer-head">
+        <h5>Mushroom</h5>
+    </div>
+    <div className="footer-info">
+        <h6> Information Sourced from the Center for Disease Control and The World Health Organization</h6>
+    </div>
+    <div className="footer-copyright">
+        <h6 > &copy; 2020 Copyright: Mushroom</h6>
+    </div>
+</footer>
 </div>
-<br></br>
-            </footer>
             </div>
         )
     }

@@ -80,13 +80,13 @@ export default class Motor extends Component {
                     {
 
                         data: [2, 3, 4, 4, 4, 5, 5, 5, 6, 9, 11],
-                        backgroundColor: '#D2C4C3',
-                        color: "#D2C4C3"
+                        backgroundColor: "#fefdfc",
+                        color: "#fefdfc"
                     },
                     {
 
                         data: [2, 2, 2, 2, 3, 5, 6, 6, 6, 3, 1],
-                        backgroundColor: "#94A0B0",
+                        backgroundColor: "#48665f",
 
                     }
                 ]
@@ -116,13 +116,20 @@ export default class Motor extends Component {
                 <Ap/>
                 <br></br>
             </div>
-            <footer>
-            Mushroom
-<div className="Srcs">
-Information Sourced from: The World Health Organization & The Center for Disease Contorl
+            <div className="footer">
+
+<footer>
+    <div className="footer-head">
+        <h5>Mushroom</h5>
+    </div>
+    <div className="footer-info">
+        <h6> Information Sourced from the Center for Disease Control and The World Health Organization</h6>
+    </div>
+    <div className="footer-copyright">
+        <h6 > &copy; 2020 Copyright: Mushroom</h6>
+    </div>
+</footer>
 </div>
-<br></br>
-            </footer>
             </div>
         )
     }

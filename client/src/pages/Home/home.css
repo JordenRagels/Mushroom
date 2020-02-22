@@ -1,68 +1,35 @@
 .milestones-home{
-    height: 200px;
-    width: 30%;
-    background-color: #B2B2A9;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  margin-left: 17%;
-    border: black solid 3px;
-    margin-top: 1%;
-    text-align: left;
-    text-indent: 5px;
-    font-weight: bold;
-    float: left;
-    text-align: center;
-    border-radius: 30%;
+  width: 30%;
+  background-color: #B2B2A9;
+  padding-top: 1%;
+  padding-bottom: 1%;
+margin-left: 17%;
+  border: black solid 3px;
+  margin-top: 1%;
+  text-align: left;
+  text-indent: 5px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  border-radius: 30%;
+  font-size: x-large;
 }
 
-.sleepingandeating-home{
-    height: 200px;
-    width: 30%;
-    background-color: #B2B2A9;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  margin-left: 17%;
-    border: black solid 3px;
-    margin-top: 1%;
-    text-align: left;
-    text-indent: 5px;
-    font-weight: bold;
-    float: left;
-    text-align: center;
-    border-radius: 30%;
-}
-
-.percentile-home{
-    height: 200px;
-    width: 30%;
-    background-color: #B2B2A9;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  margin-left: 17%;
-    border: black solid 3px;
-    margin-top: 1%;
-    text-align: left;
-    text-indent: 5px;
-    font-weight: bold;
-    float: left;
-    text-align: center;
-    border-radius: 30%;
-}
-.parentresources-home{
-    height: 200px;
-    width: 30%;
-    background-color: #B2B2A9;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  margin-left: 17%;
-    border: black solid 3px;
-    margin-top: 1%;
-    text-align: left;
-    text-indent: 5px;
-    font-weight: bold;
-    float: left;
-    text-align: center;
-    border-radius: 30%;
+.parent-resources-home{
+  width: 30%;
+  background-color: #B2B2A9;
+  padding-top: 1%;
+  padding-bottom: 1%;
+margin-left: 17%;
+  border: black solid 3px;
+  margin-top: 1%;
+  text-align: left;
+  text-indent: 5px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  border-radius: 30%;
+  font-size: x-large;
 }
 .emergency-home{
     height: 75px;
@@ -81,8 +48,29 @@
     border-radius: 30%;
     font-size: x-large;
 }
+
+.activities-home{
+  height: 75px;
+  width: 30%;
+  background-color: #B2B2A9;
+  padding-top: 1%;
+  padding-bottom: 1%;
+margin-left: 17%;
+  border: black solid 3px;
+  margin-top: 1%;
+  text-align: left;
+  text-indent: 5px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  border-radius: 30%;
+  font-size: x-large;
+}
 a{
     margin: 10px;
     color:black;
     font-size: larger;
+}
+body{
+  background-image: url("https://i.pinimg.com/564x/00/19/3f/00193f3a3f83bcd02c4852fd3cfb3aba.jpg");
 }

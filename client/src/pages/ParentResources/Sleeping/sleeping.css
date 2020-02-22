@@ -1,25 +1,25 @@
 thead{
     font-weight: bolder;
-    border-bottom: #c2d9dd solid 5px;
+    border-bottom: #042920 solid 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    border-top: #c2d9dd solid 5px;
+    border-top: #042920 solid 5px;
 }
 th{
-    border: #c2d9dd solid 2px;
+    border: #042920 solid 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    background-color: #d5c3c0
+    background-color: #fefdfc
 }
 td{
-    border-left: #c2d9dd solid 2px;
-    border-right:  #c2d9dd solid 2px;
+    border-left: #042920 solid 2px;
+    border-right:  #042920 solid 2px;
     background-color: #c2d9dd ;
-    border-bottom:  #c2d9dd solid 2px;
+    border-bottom:  #042920 solid 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    background-color: #d5c3c0 ;
+    background-color: #fefdfc;
 }
 table{
-    width: 100%;
-
+    width: 85%;
+margin: auto;
 }
 .months{
     font-weight: bolder

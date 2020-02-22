@@ -15,9 +15,22 @@ td{
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 .table{
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 .months{
     font-weight: bolder
+}
+.footer-copyright-pr{
+    font-size: xx-small;
+    text-align: center;
+    background-color:black ;
+    border-top: double 5px#042920 ;
+    color: white;
+    position:absolute;
+    width: 100%;
+    position:absolute;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 10%;
 }

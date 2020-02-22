@@ -1,8 +1,16 @@
 .navB{
     max-height: max-content;
-    width: 75%;
+    width: 80%;
     margin: auto;
+    margin-bottom: 2%;
+    color: black;
+
 }
 .dropdown.nav-item{
     margin:5px;
+    color: black;
+}
+.dropdown-item{
+    color: black;
+    font-size: medium;
 }

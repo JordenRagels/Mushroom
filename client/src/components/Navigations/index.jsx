@@ -11,24 +11,10 @@ function NavigationsComponent() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown title="Milestones" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/cognitive">Cognitive</NavDropdown.Item>
-              <NavDropdown.Item href="/motor">Motor</NavDropdown.Item>
-              <NavDropdown.Item href="/social">Social</NavDropdown.Item>
-              <NavDropdown.Item href="/verbal">Verbal</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Sleeping & Eating Recomendations" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/sleeping">Sleeping</NavDropdown.Item>
-              <NavDropdown.Item href="/eating">Eating</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Percentile Calculators          " id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/percentile">Weight Percentile<br/>Calculator</NavDropdown.Item>
-              <NavDropdown.Item href="/percentile">Length Percentile<br/> Calculator</NavDropdown.Item>
-            </NavDropdown>
-            <NavDropdown title="Parent Resources" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/">Find a <br/>Pediatrician</NavDropdown.Item>
-              <NavDropdown.Item href="/meditation">Meditation</NavDropdown.Item>
-             <NavDropdown.Item href="/emergency">Emergency</NavDropdown.Item></NavDropdown>
+              <NavDropdown.Item href="/milestoneshome">Milestones</NavDropdown.Item>
+              <NavDropdown.Item href="/activitieshome">Activities</NavDropdown.Item>
+              <NavDropdown.Item href="/parentshome">Parent Resources</NavDropdown.Item>
+              <NavDropdown.Item href="/emergency">Emergency</NavDropdown.Item>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

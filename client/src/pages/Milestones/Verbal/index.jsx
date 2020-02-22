@@ -81,18 +81,14 @@ export default class Verbal extends Component {
                 labels: ["Coos and Gurgles", "Turns Head Toward Sounds", "Simple Babbles", "Attempts to Copy Sounds with Babbles", "Develops Distinct Cries Depending on Needs", "Strings Vowels Together While Babbling", "Responds to Name", "Begins to Make Consonant Sounds", "Copies Noises", "Has a Variety of Babbles", "Speaks Simple Words", "Sounds Change in Tones to Mimic Speech"],
                 datasets: [
                     {
-
                         data: [1, 1, 3, 3, 3, 6, 8, 9, 9, 9, 10, 11],
-                        backgroundColor: "#D2C4C3",
-                        color: '#D2C4C3',
+                        backgroundColor: "#fefdfc",
+                        color: "#fefdfc",
                         label: "Age in Months",
                     },
                     {
-
                         data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2,1],
-                        backgroundColor: "#94A0B0",
-
-
+                        backgroundColor: "#48665f",
                     }
                 ]
             },
@@ -121,13 +117,20 @@ export default class Verbal extends Component {
                 <Ap />
                 <br></br>
           </div>
-          <footer>
-            Mushroom
-<div className="Srcs">
-Information Sourced from: The World Health Organization & The Center for Disease Contorl
+          <div className="footer">
+
+<footer>
+    <div className="footer-head">
+        <h5>Mushroom</h5>
+    </div>
+    <div className="footer-info">
+        <h6> Information Sourced from the Center for Disease Control and The World Health Organization</h6>
+    </div>
+    <div className="footer-copyright">
+        <h6 > &copy; 2020 Copyright: Mushroom</h6>
+    </div>
+</footer>
 </div>
-<br></br>
-            </footer>
             </div>
         )
     }

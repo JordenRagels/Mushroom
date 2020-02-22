@@ -28,7 +28,7 @@
 }
 
 .allergens{
-    height: 200px;
+    min-height: 200px;
     width: 30%;
     background-color: white;
     padding-top: 1%;
@@ -42,7 +42,7 @@
     float: left;
 }
 .medications{
-    height: 200px;
+   min-height: 200px;
     width: 30%;
     background-color: white;
     padding-top: 1%;
@@ -61,29 +61,16 @@
     margin: auto;
 }
 
-.footer{
-    height: 100px;
-    color:white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-top: black 5px double;
-    background-color: #B2B2A9;
-}
-.footer-head{
-    text-decoration: underline;
-    margin: 5px;
-    margin-bottom: 15px;
-    text-align: right;
-}
-.footer-info{
-    font-size: small;
-    float: auto;
-}
 .footer-copyright{
-    font-size: x-small;
+    font-size: xx-small;
     text-align: center;
-    margin-top: 10px;
-    background-color:#A7A79D ;
-    margin-top: 21px;
-    padding-bottom: 10px;
-    padding-top: 5px;
+    background-color: black;
+    border-top: double 5px#042920;
+    color: white;
+    position:absolute;
+    width: 100%;
+    position:absolute;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 10%;
 }

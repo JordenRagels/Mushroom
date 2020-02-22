@@ -5,17 +5,29 @@ import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import Home from './pages/Home'
 import { NavBar } from './components'
+//Milestones
+import MilestonesHome from "./pages/Milestones"
 import Cognitive from './pages/Milestones/Cognitive'
 import Motor from './pages/Milestones/Motor'
 import Social from './pages/Milestones/Social'
 import Verbal from './pages/Milestones/Verbal'
-import Eating from "./pages/EatingandSleepingCharts/Eating"
-import Sleeping from "./pages/EatingandSleepingCharts/Sleeping"
-import Log from "./pages/Log"
-import Percentile from './pages/PercentileCalculator'
-import DoctorSearch from './pages/DoctorSearch'
-import doctorSearch from './pages/DoctorSearch'
+//Parent Resources
+import ParentsHome from "./pages/ParentResources"
+import Eating from "./pages/ParentResources/Eating"
+import Sleeping from "./pages/ParentResources/Sleeping"
+import LengthCalculator from "./pages/ParentResources/LengthCalculator"
+import WeightCalculator from "./pages/ParentResources/WeightCalculator"
+//Emergency Page
 import Emergency from './pages/Emergency'
+//Activites
+import ActivitiesHome from "./pages/Activities"
+import OneToTwo from "./pages/Activities/one-to-two";
+import ThreeToFour from "./pages/Activities/three-to-four"
+import FiveToSix from "./pages/Activities/five-to-six"
+import SevenToEight from "./pages/Activities/seven-to-eight"
+import NineToTen from "./pages/Activities/nine-to-ten"
+import ElevenToTwelve from "./pages/Activities/eleven-to-twelve"
+
 class App extends Component {
 	constructor(props) {
 		super(props)
@@ -73,6 +85,7 @@ class App extends Component {
 
 	render() {
 		return (
+			//Home Paths
 			<div className="">
 				{/*  Individual Things */}
 				<Route
@@ -94,6 +107,71 @@ class App extends Component {
 					component={SignupForm}
 				/>
 
+
+<Route
+					exact
+					path="/activitieshome"
+					render={() =>
+						<ActivitiesHome/>
+					}
+				/>
+		
+				<Route
+					exact
+					path="/activitiesonetotwo"
+					render={() =>
+						<OneToTwo/>
+					}
+				/>
+
+<Route
+					exact
+					path="/activitiesthreetofour"
+					render={() =>
+						<ThreeToFour/>
+					}
+				/>
+				
+				<Route
+					exact
+					path="/activitiesfivetosix"
+					render={() =>
+						<FiveToSix/>
+					}
+				/>
+				
+				<Route
+					exact
+					path="/activitiesseventoeight"
+					render={() =>
+						<SevenToEight/>
+					}
+				/>
+				
+				<Route
+					exact
+					path="/activitiesninetoten"
+					render={() =>
+						<NineToTen/>
+					}
+				/>
+				
+				<Route
+					exact
+					path="/activitieseleventotwelve"
+					render={() =>
+						<ElevenToTwelve/>
+					}
+				/>
+
+
+				<Route
+					exact
+					path="/milestoneshome"
+					render={() =>
+						<MilestonesHome/>
+					}
+				/>
 				<Route
 					exact
 					path="/cognitive"
@@ -101,7 +179,6 @@ class App extends Component {
 						<Cognitive>cog</Cognitive>
 					}
 				/>
-
 				<Route
 					exact
 					path="/motor"
@@ -123,6 +200,17 @@ class App extends Component {
 						<Verbal></Verbal>
 					}
 				/>
+
+				
+				<Route
+					exact
+					path="/parentshome"
+					render={() =>
+						<ParentsHome/>
+					}
+				/>
+
+
 				<Route
 					exact
 					path="/eating"
@@ -137,35 +225,28 @@ class App extends Component {
 						<Sleeping></Sleeping>
 					}
 				/>
-
 				<Route
 					exact
-					path="/log"
+					path="/weightcalculator"
 					render={() =>
-						<Log></Log>
+						<WeightCalculator/>
+					}
+				/>
+								<Route
+					exact
+					path="/lengthcalculator"
+					render={() =>
+						<LengthCalculator/>
 					}
 				/>
 
+
 				<Route
 					exact
-					path="/percentile"
+					path="/emergency"
 					render={() =>
-						<Percentile></Percentile>
+						<Emergency />
 					}
-				/>
-				<Route
-					exact
-					path="/doctorSearch"
-					render={() =>
-						<DoctorSearch></DoctorSearch>
-					}
-				/>
-				<Route
-				exact
-				path="/emergency"
-				render={()=>
-				<Emergency/>
-				}
 				/>
 			</div>
 

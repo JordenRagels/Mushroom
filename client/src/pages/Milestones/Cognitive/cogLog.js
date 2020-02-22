@@ -115,7 +115,7 @@ function App() {
     labels: ['Cognitive'],
     datasets: [{
       data: [1],
-      backgroundColor: '#94A0B0',
+      backgroundColor: "#48665f",
     }]
   });
   console.log(zState.labels);
@@ -144,7 +144,7 @@ function App() {
           {aState.time}
         </div>
         <div className="btn-group">
-            <button onClick={() => { setAState({ ...aState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setAState({ ...aState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: [''], datasets: [{ data: [1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
     </button>
     </div>

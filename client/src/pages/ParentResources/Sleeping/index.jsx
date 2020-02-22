@@ -1,61 +1,60 @@
-import "./eating.css";
-import React, { Component } from 'react';
+import React from 'react';
+import "./sleeping.css";
 import { Navigations } from '../../../components/Navigations/index';
 
-class Eating extends Component {
+class Sleeping extends React.Component {
     render() {
         return (
             <div>
-                <Navigations/>
-                <div className="table">
+                <Navigations />
                 <table>
                     <thead>
                         <tr>
                             <th>Age in Months</th>
                             <br></br>
                             <br></br>
-                            <th>Total Daily Ounces of Milk</th>                     <br></br>
-                            <th>New Foods Introduced</th>
+                            <th>Total Hours of Sleep</th>                     <br></br>
+                            <th>Total Hours of Nighttime Sleep</th>
                             <br></br>
-                            <th>Number of Feedings Per Day</th>
+                            <th>Total Hours of Daytime Sleep</th>
                         </tr>
                     </thead>
 
                     <tbody>
-                        <tr >
+                        <tr>
                             <td className="months">1</td>
                             <br></br>
                             <br></br>
-                            <td>16-24</td>
+                            <td>16</td>
                             <br></br>
                             <br></br>
-                            <td>N/A</td>
+                            <td>8-9</td>
                             <br></br>
                             <br></br>
-                            <td>6-8</td>
+                            <td>7-8</td>
                         </tr>
 
                         <tr>
                             <td className="months">2</td>
                             <br></br>
                             <br></br>
-                            <td>30</td>
+                            <td>12</td>
                             <br></br>
                             <br></br>
-                            <td>N/A</td>
+                            <td>8-9</td>
                             <br></br>
                             <br></br>
-                            <td>5-6</td>
+                            <td>7-8</td>
                         </tr>
 
                         <tr>
                             <td className="months">3</td>
                             <br></br>
                             <br></br>
-                            <td>32-36</td>
+                            <td>15</td>
                             <br></br>
                             <br></br>
-                            <td>N/A</td>
+                            <td>9-10</td>
                             <br></br>
                             <br></br>
                             <td>5-6</td>
@@ -65,132 +64,128 @@ class Eating extends Component {
                             <td className="months">4</td>
                             <br></br>
                             <br></br>
-                            <td>32-36</td>
+                            <td>15</td>
                             <br></br>
                             <br></br>
-                            <td>N/A</td>
+                            <td>9-10</td>
                             <br></br>
                             <br></br>
-                            <td>4-6</td>
+                            <td>5-6</td>
                         </tr>
 
                         <tr>
                             <td className="months">5</td>
                             <br></br>
                             <br></br>
-                            <td>32-36</td>
+                            <td>15</td>
                             <br></br>
                             <br></br>
-                            <td>N/A</td>
+                            <td>9-10</td>
                             <br></br>
                             <br></br>
-                            <td>4-6</td>
+                            <td>5-6</td>
                         </tr>
 
                         <tr colSpan="2">
                             <td className="months">6</td>
                             <br></br>
                             <br></br>
-                            <td>28-32</td>
+                            <td>14</td>
                             <br></br>
                             <br></br>
-                            <td>Half a cup of soft food 2-3 times a day</td>
+                            <td>10</td>
                             <br></br>
                             <br></br>
-                            <td>3-5</td>
+                            <td>4</td>
                         </tr>
 
                         <tr>
                             <td className="months">7</td>
                             <br></br>
                             <br></br>
-                            <td>30-32</td>
+                            <td>14</td>
                             <br></br>
                             <br></br>
-                            <td>Half a cup of soft food 2-3 times a day</td>
+                            <td>10</td>
                             <br></br>
                             <br></br>
-                            <td>3-5</td>
+                            <td>4</td>
                         </tr>
 
                         <tr>
                             <td className="months">8</td>
                             <br></br>
                             <br></br>
-                            <td>30-32</td>
+                            <td>14</td>
                             <br></br>
                             <br></br>
-                            <td>Half a cup of soft food 2-3 times a day</td>
+                            <td>10-11</td>
                             <br></br>
                             <br></br>
-                            <td>3-5</td>
+                            <td>4-3</td>
                         </tr>
 
                         <tr>
                             <td className="months">9</td>
                             <br></br>
                             <br></br>
-                            <td>30-32</td>
+                            <td>14</td>
                             <br></br>
                             <br></br>
-                            <td>Half a cup of soft food 3-4 times a day</td>
+                            <td>10-11</td>
                             <br></br>
                             <br></br>
-                            <td>3-5</td>
+                            <td>4-3</td>
                         </tr>
 
                         <tr>
                             <td className="months">10</td>
                             <br></br>
                             <br></br>
-                            <td>24-30</td>
+                            <td>14</td>
                             <br></br>
                             <br></br>
-                            <td>Half a cup of soft food 3-4 times a day</td>
+                            <td>11</td>
                             <br></br>
                             <br></br>
-                            <td>3-4</td>
+                            <td>3</td>
                         </tr>
 
                         <tr>
                             <td className="months">11</td>
                             <br></br>
                             <br></br>
-                            <td>24-30</td>
+                            <td>14</td>
                             <br></br>
                             <br></br>
-                            <td>Half a cup of soft food 3-4 times a day</td>
+                            <td>11</td>
                             <br></br>
                             <br></br>
-                            <td>3-4</td>
+                            <td>3</td>
                         </tr>
-
                         <tr>
                             <td className="months">12</td>
                             <br></br>
                             <br></br>
-                            <td>24-30</td>
+                            <td>14</td>
                             <br></br>
                             <br></br>
-                            <td>Half a cup of soft food 3-4 times a day</td>
+                            <td>11</td>
                             <br></br>
                             <br></br>
-                            <td>3-4</td>
+                            <td>3</td>
                         </tr>
-                       
                     </tbody>
                 </table>
+                <div className="footer">
+                    <div className="footer-copyright-pr">
+                        <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
+                        <br></br>
+                        <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
+                    </div>
                 </div>
-                <footer>
-            Mushroom
-<div className="Srcs">
-Information Sourced from: The World Health Organization & The Center for Disease Contorl
-</div>
-<br></br>
-            </footer>
             </div>
         )
     }
 }
-
-export default Eating;
+export default Sleeping;
