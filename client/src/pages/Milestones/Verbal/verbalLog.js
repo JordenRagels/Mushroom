@@ -84,9 +84,9 @@ function Ap() {
   }
 
   const [zState, setZState] = useState({
-    labels: ['Skills'],
+    labels: [],
     datasets: [{
-      data: [1],
+      data: [],
       backgroundColor: '#48665f',
       color: "#48665f"
     }]
@@ -304,7 +304,7 @@ function Ap() {
             {lState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setLState({ ...lState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', "Milestone 4", "Milestone 5", 'Milestone 6', "Milestone 7", 'Milestone 8', "Milestone 9", "Milestone 10", "Milestone 11", "Milestone 12"], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setLState({ ...lState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', "Milestone 4", "Milestone 5", 'Milestone 6', "Milestone 7", 'Milestone 8', "Milestone 9", "Milestone 10", "Milestone 11", "Milestone 12"], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -321,7 +321,7 @@ function Ap() {
             {mState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setMState({ ...mState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', "Milestone 4", "Milestone 5", 'Milestone 6', "Milestone 7", 'Milestone 8', "Milestone 9", "Milestone 10", "Milestone 11", "Milestone 12", "Milestone 13"], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setMState({ ...mState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', "Milestone 4", "Milestone 5", 'Milestone 6', "Milestone 7", 'Milestone 8', "Milestone 9", "Milestone 10", "Milestone 11", "Milestone 12", "Milestone 13"], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>

@@ -64,8 +64,8 @@
 .footer-copyright{
     font-size: xx-small;
     text-align: center;
-    background-color: black;
-    border-top: double 5px#042920;
+    background-color: #042920;
+    border-top: double 5px ;
     color: white;
     position:absolute;
     width: 100%;
@@ -73,4 +73,9 @@
     padding-bottom: 1rem;
     padding-top: 1rem;
     margin-top: 10%;
+}
+button{
+    background-color: #042920;
+    border: #042920 solid 2px;
+    color: white;
 }

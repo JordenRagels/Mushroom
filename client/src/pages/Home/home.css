@@ -74,3 +74,35 @@ a{
 body{
   background-image: url("https://i.pinimg.com/564x/00/19/3f/00193f3a3f83bcd02c4852fd3cfb3aba.jpg");
 }
+.homepagetitle{
+  width: 30%;
+  float: left;
+  border-bottom: double 10px #042d23;
+  text-decoration: none;
+}
+.tagline{
+  width: 100%;
+  background-color: white;
+  text-align: left;
+  padding-top: 9%;
+  padding-bottom: 1.4%;
+  border-bottom: #042d23 double 10px;
+}
+.homepagenav{
+  background-color: white;
+  padding-bottom: 1%;
+}
+.footer-copyright-home{
+  margin-top: 24%;
+  background-color:  #48665f;
+  font-size: xx-small;
+  text-align: center;
+  background-color:#042920;
+  border-top: double 5px white;
+  color: white;
+  position:absolute;
+  width: 100%;
+  position:absolute;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}

@@ -17,19 +17,23 @@ height:4%
     width: 26%;
     margin-left: 23%;
     background-color: #FEFDFC;
-    padding-top: 16rem;
+    padding-top: 3.5rem;
     padding-bottom: 2rem;
    margin-top: 3rem;
    border: #878179 4px double;
    border-radius: 2%;
    font-weight: bolder;
 }
+a:hover{
+    color: gray;
+    border-radius: 50%;
+}
 .nitem-2{
     float: left;
     width: 26%;
     margin-left: 1%;
     background-color: #48665f;
-    padding-top: 16rem;
+    padding-top: 3.5rem;
     padding-bottom: 2rem;
    margin-top: 3rem;
    border: #042920 4px double;
@@ -42,7 +46,7 @@ height:4%
     width: 26%;
     margin-left: 23%;
     background-color: #48665f;
-    padding-top: 16rem;
+    padding-top: 3.5rem;
     padding-bottom: 2rem;
    margin-top: 1rem;
    border: #042920 4px double;
@@ -55,7 +59,7 @@ height:4%
     width: 26%;
     margin-left: 1%;
     background-color: #FEFDFC;
-    padding-top: 16rem;
+    padding-top: 3.5rem;
     padding-bottom: 2rem;
    margin-top: 1rem;
    border: #878179 4px double;
@@ -80,8 +84,8 @@ font-weight: bolder;
 .footer-copyright-mil{
     font-size: xx-small;
     text-align: center;
-    background-color:black ;
-    border-top: double 5px#042920 ;
+    background-color:#042920 ;
+    border-top: double 5px white;
     color: white;
     position:absolute;
     width: 100%;
@@ -89,4 +93,16 @@ font-weight: bolder;
     padding-bottom: 1rem;
     padding-top: 1rem;
     margin-top: 55%;
+}
+.footer-copyright-milc{
+    font-size: xx-small;
+    text-align: center;
+    background-color:#042920 ;
+    border-top: double 5px white;
+    color: white;
+    position:absolute;
+    width: 100%;
+    position:absolute;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }

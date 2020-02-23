@@ -1,0 +1,62 @@
+.footer-copyright-med{
+    font-size: xx-small;
+    text-align: center;
+    background-color:#042920;
+    border-top: double 5px white ;
+    color: white;
+    position:absolute;
+    width: 100%;
+    position:absolute;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 0px;
+    margin-top: 24%;
+float: left;
+}
+#meditation-circle{
+    margin-left: 50px;
+}
+
+.af1{
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-style: italic;
+    }
+    .af2{
+        float: left;
+        margin-left: 18%;
+        margin-top: 5%;
+        font-style: italic;
+        }
+.af3{
+    float: left;
+    margin-left: 5%;
+    margin-top: 5%;
+    font-style: italic;
+}
+.af4{
+float: right;
+margin-right: 5%;
+margin-top: 5%;
+font-style: italic;
+}
+.af5{
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+    font-style: italic;
+    }
+    .af7{
+        width:100%;
+        float: left;
+        margin-top: 5%;
+        font-style: italic;
+        }
+.af6{
+    
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+    font-style: italic;
+}

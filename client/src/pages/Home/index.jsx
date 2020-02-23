@@ -2,23 +2,25 @@ import React, { Component } from 'react';
 import "./home.css";
 import HomeNavs from '../../components/HomeNavs/index';
 import LoginForm from '../LoginForm';
-
+import { Navigations } from '../../components/Navigations'
+import { GiMushroom } from "react-icons/gi"
 export default class Home extends Component {
 	render() {
 		return (
 			<div>
-				<h2>Mushroom</h2>
-				<div className="milestones-home">
-					<a href="/milestoneshome">Milestones</a>
+				<div className="homepagenav">
+					<Navigations />
 				</div>
-				<div className="parent-resources-home">
-					<a href="/parentshome">Parent Resources</a>
+				<h1 className="homepagetitle"><GiMushroom size="100px"/>Mushroom</h1>
+				<div className="tagline">
+				<h3>A New Parent's Realiable Resource</h3>
 				</div>
-				<div className="activities-home">
-					<a href="/activitieshome">Activities</a>
-				</div>
-				<div className="emergency-home">
-					<a href="/emergency">Emergency</a>
+				<div className="footer">
+					<div className="footer-copyright-home">
+						<h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
+						<br></br>
+						<h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
+					</div>
 				</div>
 			</div>
 		)

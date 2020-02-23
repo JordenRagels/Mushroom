@@ -128,19 +128,12 @@ export default class Motor extends Component {
             <br></br>
             </div>
             <div className="footer">
-
-<footer>
-    <div className="footer-head">
-        <h5>Mushroom</h5>
-    </div>
-    <div className="footer-info">
-        <h6> Information Sourced from the Center for Disease Control and The World Health Organization</h6>
-    </div>
-    <div className="footer-copyright">
-        <h6 > &copy; 2020 Copyright: Mushroom</h6>
-    </div>
-</footer>
-</div>
+                    <div className="footer-copyright-milc">
+                        <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
+                        <br></br>
+                        <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
+                    </div>
+                </div>
             </div>
         )
     }

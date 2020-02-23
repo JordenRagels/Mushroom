@@ -112,9 +112,9 @@ function App() {
   }
 
   const [zState, setZState] = useState({
-    labels: ['Cognitive'],
+    labels: [],
     datasets: [{
-      data: [1],
+      data: [],
       backgroundColor: "#48665f",
     }]
   });
@@ -144,7 +144,7 @@ function App() {
           {aState.time}
         </div>
         <div className="btn-group">
-            <button onClick={() => { setAState({ ...aState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: [''], datasets: [{ data: [1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setAState({ ...aState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1'], datasets: [{ data: [ 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
     </button>
     </div>
@@ -161,7 +161,7 @@ function App() {
             {bState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setBState({ ...bState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setBState({ ...bState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', 'Milestone 2'], datasets: [{ data: [1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -178,7 +178,7 @@ function App() {
             {cState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setCState({ ...cState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setCState({ ...cState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3'], datasets: [{ data: [ 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -195,7 +195,7 @@ function App() {
             {dState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setDState({ ...dState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setDState({ ...dState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4'], datasets: [{ data: [1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -212,7 +212,7 @@ function App() {
             {eState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setEState({ ...eState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setEState({ ...eState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', 'Milestone 5'], datasets: [{ data: [1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -229,7 +229,7 @@ function App() {
             {fState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setFState({ ...fState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setFState({ ...fState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6'], datasets: [{ data: [ 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -246,7 +246,7 @@ function App() {
             {gState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setGState({ ...gState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setGState({ ...gState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -263,7 +263,7 @@ function App() {
             {hState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setHState({ ...hState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setHState({ ...hState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8'], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -280,7 +280,7 @@ function App() {
             {iState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setIState({ ...iState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setIState({ ...iState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8', 'Milestone 9'], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -297,7 +297,7 @@ function App() {
             {jState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setJState({ ...jState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setJState({ ...jState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8', 'Milestone 9', 'Milestone 10'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -314,7 +314,7 @@ function App() {
             {kState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setKState({ ...kState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setKState({ ...kState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8', 'Milestone 9', 'Milestone 10', 'Milestone 11'], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -331,7 +331,7 @@ function App() {
             {lState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setLState({ ...lState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setLState({ ...lState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8', 'Milestone 9', 'Milestone 10', 'Milestone 11', 'Milestone 12'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -348,7 +348,7 @@ function App() {
             {mState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setMState({ ...mState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setMState({ ...mState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8', 'Milestone 9', 'Milestone 10', 'Milestone 11', 'Milestone 12', 'Milestone 13'], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -365,7 +365,7 @@ function App() {
             {nState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setNState({ ...nState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setNState({ ...nState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8', 'Milestone 9', 'Milestone 10', 'Milestone 11', 'Milestone 12', 'Milestone 13', 'Milestone 14'], datasets: [{ data: [ 1, 1, 1, 1, 1,1,1,1,1,1,1,1,1,1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
   </button>
           </div>
@@ -382,7 +382,7 @@ function App() {
             {oState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setOState({ ...oState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setOState({ ...oState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8', 'Milestone 9', 'Milestone 10', 'Milestone 11', 'Milestone 12', 'Milestone 13', "Milestone 14", "Milestone 15"], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
          </button>
           </div>
@@ -399,11 +399,12 @@ function App() {
             {pState.time}
           </div>
           <div className="btn-group">
-            <button onClick={() => { setPState({ ...pState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['blue'], datasets: [{ data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
+            <button onClick={() => { setPState({ ...pState, accomlished: "Milestone Achieved", time: Date().toString() }); setZState({ ...zState, labels: ['Milestone 1', "Milestone 2", 'Milestone 3', 'Milestone 4', "Milestone 5", 'Milestone 6', 'Milestone 7', 'Milestone 8', 'Milestone 9', 'Milestone 10', 'Milestone 11', 'Milestone 12', 'Milestone 13', 'Milestone 16', 'Milestone'], datasets: [{ data: [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1] }] }); handleSubmit() }} className="btn-success">
               Milestone Achieved!
              </button>
-          </div>
+          </div> 
         </div>
+         <br></br>
       </div>
     </div>
   );

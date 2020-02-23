@@ -17,6 +17,7 @@ import Eating from "./pages/ParentResources/Eating"
 import Sleeping from "./pages/ParentResources/Sleeping"
 import LengthCalculator from "./pages/ParentResources/LengthCalculator"
 import WeightCalculator from "./pages/ParentResources/WeightCalculator"
+import Meditation from "./pages/ParentResources/Meditation"
 //Emergency Page
 import Emergency from './pages/Emergency'
 //Activites
@@ -108,59 +109,59 @@ class App extends Component {
 				/>
 
 
-<Route
+				<Route
 					exact
 					path="/activitieshome"
 					render={() =>
-						<ActivitiesHome/>
+						<ActivitiesHome />
 					}
 				/>
-		
+
 				<Route
 					exact
 					path="/activitiesonetotwo"
 					render={() =>
-						<OneToTwo/>
+						<OneToTwo />
 					}
 				/>
 
-<Route
+				<Route
 					exact
 					path="/activitiesthreetofour"
 					render={() =>
-						<ThreeToFour/>
+						<ThreeToFour />
 					}
 				/>
-				
+
 				<Route
 					exact
 					path="/activitiesfivetosix"
 					render={() =>
-						<FiveToSix/>
+						<FiveToSix />
 					}
 				/>
-				
+
 				<Route
 					exact
 					path="/activitiesseventoeight"
 					render={() =>
-						<SevenToEight/>
+						<SevenToEight />
 					}
 				/>
-				
+
 				<Route
 					exact
 					path="/activitiesninetoten"
 					render={() =>
-						<NineToTen/>
+						<NineToTen />
 					}
 				/>
-				
+
 				<Route
 					exact
 					path="/activitieseleventotwelve"
 					render={() =>
-						<ElevenToTwelve/>
+						<ElevenToTwelve />
 					}
 				/>
 
@@ -169,7 +170,7 @@ class App extends Component {
 					exact
 					path="/milestoneshome"
 					render={() =>
-						<MilestonesHome/>
+						<MilestonesHome />
 					}
 				/>
 				<Route
@@ -201,12 +202,12 @@ class App extends Component {
 					}
 				/>
 
-				
+
 				<Route
 					exact
 					path="/parentshome"
 					render={() =>
-						<ParentsHome/>
+						<ParentsHome />
 					}
 				/>
 
@@ -229,14 +230,21 @@ class App extends Component {
 					exact
 					path="/weightcalculator"
 					render={() =>
-						<WeightCalculator/>
+						<WeightCalculator />
 					}
 				/>
-								<Route
+				<Route
 					exact
 					path="/lengthcalculator"
 					render={() =>
-						<LengthCalculator/>
+						<LengthCalculator />
+					}
+				/>
+				<Route
+					exact
+					path="/meditation"
+					render={() =>
+						<Meditation />
 					}
 				/>
 

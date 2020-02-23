@@ -1,3 +1,21 @@
+
+.pagetitle{
+    width: 50%;
+    float: right;
+    margin-top: 2%;
+    background-color: white;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-left: double 5px #042920;
+    border-bottom: double 5px #042920;
+    border-top: double 5px #042920;
+    font-weight: bolder;
+    text-decoration: #042920 underline;
+    font-size: xx-large;
+}
+
 .h-c{
     background-color: #48665f;
     width: 100%;
@@ -5,10 +23,13 @@
     color:white; font-weight: bolder;
     padding-top: 6rem;
     padding-bottom: 2rem;
-    text-indent: 46%;
     font-weight: bolder;
     border-top:  #042920 5px double;
     border-bottom:  #042920 5px double;
+
+}
+.h-c1{
+    font-size: xxx-large;
 }
 .c-1{
     background-color: white;
@@ -63,19 +84,21 @@ height: 25rem;
     color:white; font-weight: bolder;
     padding-top: 6rem;
     padding-bottom: 2rem;
-    text-indent: 45%;
+   text-align: left;
     font-weight: bolder;
     border-top:  #042920 5px double;
     border-bottom:  #042920 5px double;
     margin-bottom: 0px;
+    padding-left: 20%;
 }
 .m-1{
     background-color: white;
+    margin-left: 8%;
   height:25rem;
   padding-top: 2rem;
+  margin-top: 0px;
     width:28%;
-    margin-right: 8%;
-    margin-top: 0px;
+    float: left;
     padding-left: 3rem;
     padding-right: 3rem;
     margin-right: 0px;
@@ -85,16 +108,15 @@ height: 25rem;
     border-bottom-left-radius: 2%;
     border-right:  #48665f 1px double;
     text-align: left;
-    float: right;
 }
 .m-2{
     background-color: white;
-height: 20rem;
-    width:30%;
+height: 25rem;
+    width:28%;
     border-bottom: #48665f 2px double;
     padding-left: 3rem;
     padding-right: 3rem;
-    float: right;
+    float: left;
     padding-top: 2rem;
     text-align: left;
 }
@@ -104,7 +126,7 @@ height: 25rem;
     width:28%;
     padding-left: 3rem;
     padding-right: 3rem;
-    float: right;
+    float: left;
     padding-top: 2rem;
     border-right:  #48665f 2px double;
     border-bottom:  #48665f 2px double;
@@ -120,12 +142,14 @@ height: 25rem;
     color:white; font-weight: bolder;
     padding-top: 6rem;
     padding-bottom: 2rem;
-    text-indent: 46%;
     font-weight: bolder;
     border-top:  #042920 5px double;
     border-bottom:  #042920 5px double;
+   text-align: right;
+   padding-right: 20%;
 }
-.v-1{
+.v-1{ 
+   
     background-color: white;
     margin-left: 8%;
   height:25rem;
@@ -176,10 +200,11 @@ height: 25rem;
     color:white; font-weight: bolder;
     padding-top: 6rem;
     padding-bottom: 2rem;
-    text-indent: 46%;
+    text-indent: 20%;
     font-weight: bolder;
     border-top:  #042920 5px double;
     border-bottom:  #042920 5px double;
+    text-align: left;
 }
 .s-1{
     background-color: white;
@@ -230,8 +255,8 @@ height: 25rem;
 .footer-copyright-act{
     font-size: xx-small;
     text-align: center;
-    background-color:black ;
-    border-top: double 5px#042920 ;
+    background-color:#042920;
+    border-top: double 5px ;
     color: white;
     position:absolute;
     width: 100%;
