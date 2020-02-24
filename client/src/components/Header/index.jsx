@@ -2,8 +2,6 @@ import React from 'react'
 import './header.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Chart from "../Chart/chart"
-// import Jumbotron from 'react-bootstrap/Jumbotron';
-// import Container from 'react-bootstrap/Container';
 
 const HeaderComponent = props => {
 	let Greeting
