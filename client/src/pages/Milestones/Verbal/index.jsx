@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./verbal.css";
+import { Navigations } from '../../../components/Navigations'
 import Chart from "chart.js";
 import Ap from './verbalLog'
 
@@ -81,13 +82,13 @@ export default class Verbal extends Component {
                 datasets: [
                     {
                         data: [1, 1, 3, 3, 3, 6, 8, 9, 9, 9, 10, 11],
-                        backgroundColor: "#6E9EEB",
-                        color: "#D2C4C3",
+                        backgroundColor: "#fefdfc",
+                        color: "#fefdfc",
                         label: "Age in Months",
                     },
                     {
                         data: [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 2,1],
-                        backgroundColor: "#9A75F0",
+                        backgroundColor: "#48665f",
                     }
                 ]
             },
@@ -102,6 +103,7 @@ export default class Verbal extends Component {
     render() {
         return (
             <div>
+                <Navigations/>
                 <div className="background">
                 <div className="heading">
                     <h1>Verbal Skills</h1>
@@ -115,6 +117,13 @@ export default class Verbal extends Component {
                 <Ap />
                 <br></br>
           </div>
+          <div className="footer">
+                    <div className="footer-copyright-milc">
+                        <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
+                        <br></br>
+                        <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
+                    </div>
+                </div>
             </div>
         )
     }

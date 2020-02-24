@@ -1,10 +1,12 @@
 import React from 'react';
 import "./sleeping.css";
+import { Navigations} from '../../../components/Navigations'
 
 class Sleeping extends React.Component {
     render() {
         return (
             <div>
+                <Navigations />
                 <table>
                     <thead>
                         <tr>
@@ -83,7 +85,7 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>5-6</td>
                         </tr>
- 
+
                         <tr colSpan="2">
                             <td className="months">6</td>
                             <br></br>
@@ -135,7 +137,7 @@ class Sleeping extends React.Component {
                             <br></br>
                             <td>4-3</td>
                         </tr>
-     
+
                         <tr>
                             <td className="months">10</td>
                             <br></br>
@@ -175,6 +177,13 @@ class Sleeping extends React.Component {
                         </tr>
                     </tbody>
                 </table>
+                <div className="footer">
+                    <div className="footer-copyright-pr">
+                        <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
+                        <br></br>
+                        <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
+                    </div>
+                </div>
             </div>
         )
     }

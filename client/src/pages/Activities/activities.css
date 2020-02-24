@@ -1,0 +1,141 @@
+@font-face{
+    font-family: "clarkson";
+    src: url("https://github.com/JordenRagels/Mushroom/blob/Mary2/client/src/Clarkson.ttf")
+}
+
+.n-l{
+    float: left;
+    width: 26%;
+    background-color: #FEFDFC;
+   padding-top: 12rem;
+   padding-bottom: 2rem;
+   margin-left: 10%;
+   margin-top: 3rem;
+   border: #878179 4px double;
+border-radius: 2%;
+font-weight: bolder;
+}
+
+.GiMushroomGills{
+   height: 100px; 
+}
+.n-2{
+    float: left;
+    width: 26%;
+    margin-left: 1%;
+    background-color:#48665f;
+    padding-top: 10.5rem;
+    padding-bottom: 2rem;
+   margin-top: 3rem;
+   border: #042920 4px double;
+   font-weight: bolder;
+   color:white;
+   border-radius: 2%;
+   font-weight: bolder;
+}
+.n-3{
+    float: left;
+    width: 26%;
+    margin-left: 1%;
+    background-color: #FEFDFC;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+   margin-top: 3rem;
+   border: #878179 4px double;
+   border-radius: 2%;
+   font-weight: bolder;
+}
+.n-4{
+    float: left;
+    width: 26%;
+    background-color: #48665f;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+   margin-top: 1rem;
+   border: #042920 4px double;
+   margin-left:10%;
+   border-radius: 2%;
+   font-weight: bolder;
+}
+.n-5{
+    float: left;
+    width: 26%;
+    background-color: white;
+    padding-top: 5.5rem;
+    padding-bottom: 2rem;
+   margin-top: 1rem;
+   border: #878179 4px double;
+   margin-left: 1%;
+   border-radius: 2%;
+   font-weight: bolder;
+}
+
+.n-6{
+    float: left;
+    width: 26%;
+    background-color: #48665f;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+   margin-top: 1rem;
+   border: #042920 4px double;
+   margin-left: 1%;
+   border-radius: 2%;
+   font-weight: bolder;
+   margin-bottom: 10%;
+}
+.bottom{
+    width: 100%;
+    height: 5%;
+}
+#al{
+    font-weight: bolder;
+}
+#bl{
+    font-weight: bolder;
+    color: white;
+}
+#cl{
+    font-weight: bolder;
+}
+#dl{
+    font-weight: bolder;
+    color: white;
+}
+#el{
+    font-weight: bolder;
+}
+#fl{
+    font-weight: bolder;
+    color: white;
+}
+.footer-copyright-act-h{
+    font-size: xx-small;
+    text-align: center;
+    background-color:#042920;
+    border-top: double 5px white;
+    color: white;
+    position:absolute;
+    width: 100%;
+    position:absolute;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 60%;
+}
+#c-1-2-i{
+    border: 2px solid white;
+    float: left;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+#c-1-2-i2{
+    border: 2px solid white;
+    float: right;
+    margin-right: 12%;
+margin-top: 10%;
+}
+#c-1-2-i3{
+    border: 2px solid white;
+    float: left;
+    margin-left: 12%;
+    margin-top: 8%;
+}

@@ -1,32 +1,34 @@
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: inherit;
-    padding: 50px;
-    /* background-color: #D2C4C3; */
+    padding:50px;
+    background-color: #fefdfc;
     text-decoration: black underline;
 }
 
 .line.tickline {
     color: black
 }
-
-.cogLog {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.cogLog{
+    background-color: #fefdfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 
-.n {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.n{
+    background-color: #fefdfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     text-align: center;
+    width: 75%;
+    margin: auto;
 }
-
-.background {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* border: 10px solid #988f8e;
-    outline: solid 5px #988f8e; */
+.background{
+    background-color: #fefdfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    border: 10px solid #988f8e;
+    background-color: #fefdfc;
     outline-offset: -20px;
+    width: 90%;
+    margin: auto;
 }
 
 .btn-success {
@@ -58,4 +60,7 @@ h1 {
 .btn-success:focus-within {
     background-color: #A2B9BF;
     border-color: #94A0B0;
+}
+.zzz{
+    margin-bottom: 1%;
 }

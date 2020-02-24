@@ -1,47 +1,54 @@
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: inherit;
-    padding: 50px;
-    /* background-color: #D2C4C3; */
-    text-decoration: black underline;
+    padding:50px;
+    background-color: #fefdfc;
+    text-decoration: #042920 underline;
+    color: #042920;
+    font-weight: bolder;
 }
 
 .line.tickline {
     color: black
 }
-
-.verbalLog {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.verbalLog{
+    background-color: #fefdfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 
-.n {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.n{
+    background-color: #fefdfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
     text-align: center;
 }
-
-.background {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* border: 10px solid #988f8e;
-    outline: solid 5px #988f8e; */
+.background{
+    background-color: #fefdfc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    border: 10px solid #48665f;
+    outline: solid 5px #48665f;
     outline-offset: -20px;
+    margin-bottom: 10%;
 }
 
-.btn-success {
-    background-color: #94A0B0;
-    border-COLOR: #A2B9BF;
-    text-align: center;
+
+
+.btn-success{
+background-color: #48665f;
+border-COLOR: #042920;;
+text-align: center;
+
+}
+.btn-success:hover{
+background-color:#A2B9BF ;
+ border-color: #042920;
 }
 
-.btn-success:hover {
-    background-color: #A2B9BF;
+.btn-success:active{
+    background-color:#042920;;
     border-color: #94A0B0;
 }
-
-.btn-success:active {
-    background-color: #A2B9BF;
+.btn-success:focus{
+    background-color:#042920; ;
     border-color: #94A0B0;
 }
 
@@ -49,13 +56,11 @@ h1 {
     background-color: #A2B9BF;
     border-color: #94A0B0;
 }
-
-.btn-success:visited {
-    background-color: #A2B9BF;
+.btn-success:visited{
+    background-color:#042920; ;
     border-color: #94A0B0;
 }
-
-.btn-success:focus-within {
-    background-color: #A2B9BF;
+.btn-success:focus-within{
+    background-color:#042920; ;
     border-color: #94A0B0;
 }

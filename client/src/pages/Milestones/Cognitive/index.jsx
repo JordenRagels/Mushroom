@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./cognitive.css";
 import Chart from "chart.js";
 import Ap from './cogLog'
-
+import { Navigations } from '../../../components/Navigations'
 
 const barOptions_stacked = {
     tooltips: {
@@ -84,12 +84,12 @@ export default class Cognitive extends Component {
                 datasets: [
                     {
                         data: [1, 2, 3, 4, 5, 6, 9, 9, 9, 9, 10, 10, 11, 11, 11, 11],
-                        backgroundColor: "#6E9EEB",
-                        color: '#D2C4C3'
+                        backgroundColor: "#fefdfc",
+                        color: "#fefdfc"
                     },
                     {
                         data: [1, 1, 2, 2, 5, 4, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1],
-                        backgroundColor: "#9A75F0",
+                        backgroundColor: "#48665f",
                     }
                 ]
             },
@@ -104,6 +104,7 @@ export default class Cognitive extends Component {
     render() {
         return (
             <div>
+                <Navigations/>
                 <div className="background">
                 <div className="heading">
                     <h1>Cognitive Skills</h1>
@@ -115,9 +116,14 @@ export default class Cognitive extends Component {
                     />
                 </div>
                 <Ap />
-                <br></br>
             </div>
-            
+            <div className="footer">
+                    <div className="footer-copyright-milc">
+                        <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
+                        <br></br>
+                        <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
+                    </div>
+                </div>
             </div>
         )
     }

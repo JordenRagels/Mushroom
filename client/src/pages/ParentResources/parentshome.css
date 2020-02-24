@@ -1,0 +1,106 @@
+body{
+    background-image: url("https://i.pinimg.com/564x/00/19/3f/00193f3a3f83bcd02c4852fd3cfb3aba.jpg");
+}
+
+.p{   
+ float: left;
+        width: 26%;
+        margin-left: 15%;
+        background-color: #FEFDFC;
+        padding-top: 3.5rem;
+        padding-bottom: 2rem;
+       margin-top: 1rem;
+       border: #878179 4px double;
+       border-radius: 2%;
+       font-weight: bolder;
+    
+}
+.r-2{
+    float: right;
+    width: 26%;
+    margin-right: 15%;
+    background-color: #48665f;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+   margin-top: 1rem;
+   border: #042920 4px double;
+   border-radius: 2%;
+   font-weight: bolder;
+   color: white;
+}
+.pr-3{
+
+        float: left;
+        width: 26%;
+        margin-left: 37%;
+        margin-right: 25%;
+        background-color: #FEFDFC;
+        padding-top: 3.5rem;
+        padding-bottom: 2rem;
+       margin-top: 1rem;
+       border: #878179 4px double;
+       border-radius: 2%;
+       font-weight: bolder;
+}
+.pr-4{
+    float: left;
+    width: 26%;
+    margin-left: 15%;
+    background-color: #48665f;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+   margin-top: 1rem;
+   border: #042920 4px double;
+   border-radius: 2%;
+   font-weight: bolder;
+}
+
+.pr-5{
+
+    float: right;
+    width: 26%;
+    margin-right:15%;
+    background-color: #FEFDFC;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+   margin-top: 1rem;
+   border: #878179 4px double;
+   border-radius: 2%;
+   font-weight: bolder;
+   margin-bottom: 15%;
+}
+
+
+
+
+.nitem-5{
+    float: left;
+    width: 26%;
+    margin-left: 1%;
+    background-color: #FEFDFC;
+    padding-top: 16rem;
+    padding-bottom: 2rem;
+   margin-top: 1rem;
+   border: #878179 4px double;
+   border-radius: 2%;
+   font-weight: bolder;
+}
+#prl2{
+    color:white
+}
+#prl4{
+    color: white;
+}
+.footer-copyright-pr-h{
+    font-size: xx-small;
+    text-align: center;
+    background-color:#042920;
+    border-top: double 5px white ;
+    color: white;
+    position:absolute;
+    width: 100%;
+    position:absolute;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 80%;
+}

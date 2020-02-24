@@ -1,0 +1,31 @@
+thead {
+    font-weight: bolder;
+    border-bottom: #042920 solid 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    border-top: #042920 solid 5px;
+}
+th{
+    border: #042920 solid 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: #fefdfc
+}
+td{
+    border-left: #042920 solid 2px;
+    border-right:  #042920 solid 2px;
+    background-color: #c2d9dd ;
+    border-bottom:  #042920 solid 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: #fefdfc;
+}
+table{
+    width: 85%;
+margin: auto;
+}
+
+.months {
+    font-weight: bolder
+}
+
+.navbar {
+    border-bottom: 7px solid black;
+}

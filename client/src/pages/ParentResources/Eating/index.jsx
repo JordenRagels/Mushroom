@@ -1,10 +1,12 @@
 import "./eating.css";
 import React, { Component } from 'react';
-
+import {Navigations} from '../../../components/Navigations'
 class Eating extends Component {
     render() {
         return (
             <div>
+                <Navigations/>
+                <div className="table">
                 <table>
                     <thead>
                         <tr>
@@ -177,6 +179,14 @@ class Eating extends Component {
                        
                     </tbody>
                 </table>
+                </div>
+                <div className="footer">
+                    <div className="footer-copyright-pr">
+                        <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
+                        <br></br>
+                        <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
+                    </div>
+                </div>
             </div>
         )
     }
