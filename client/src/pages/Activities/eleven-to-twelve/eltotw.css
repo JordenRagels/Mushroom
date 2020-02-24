@@ -30,6 +30,8 @@
 }
 .h-c1{
     font-size: xxx-large;
+    margin-left: 50%;
+
 }
 .c-1{
     background-color: white;
@@ -84,12 +86,11 @@ height: 25rem;
     color:white; font-weight: bolder;
     padding-top: 6rem;
     padding-bottom: 2rem;
-   text-align: left;
+    text-indent: -60%;
     font-weight: bolder;
     border-top:  #042920 5px double;
     border-bottom:  #042920 5px double;
-    margin-bottom: 0px;
-    padding-left: 20%;
+    text-align: left;
 }
 .m-1{
     background-color: white;
@@ -200,7 +201,7 @@ height: 25rem;
     color:white; font-weight: bolder;
     padding-top: 6rem;
     padding-bottom: 2rem;
-    text-indent: 20%;
+    text-indent:-60%;
     font-weight: bolder;
     border-top:  #042920 5px double;
     border-bottom:  #042920 5px double;
