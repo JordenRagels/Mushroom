@@ -22,6 +22,7 @@
        border: #878179 4px double;
        border-radius: 2%;
        font-weight: bolder;
+       text-align: center;
     }
     a:hover{
         color: gray;
@@ -39,6 +40,7 @@
        border-radius: 2%;
        font-weight: bolder;
        color:white;
+       text-align: center;
     }
     .nitem-3{
         float: left;
@@ -52,6 +54,7 @@
        border-radius: 2%;
        font-weight: bolder;
        margin-bottom: 10%;
+       text-align: center;
     }
     .nitem-4{
         float: left;
@@ -64,6 +67,7 @@
        border: #878179 4px double;
        border-radius: 2%;
        font-weight: bolder;
+       text-align: center;
     }
     #ml{
         color:white;

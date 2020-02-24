@@ -1,6 +1,6 @@
 {
-    "name": "react-template",
-    "version": "0.1.0",
+    "name": "myapp",
+    "version": "1.0.0",
     "private": true,
     "dependencies": {
         "accepts": "^1.3.7",

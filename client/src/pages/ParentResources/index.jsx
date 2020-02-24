@@ -12,17 +12,6 @@ class ParentsHome extends Component {
             <div>
             <Navigations/>
                 <div className="-home">
-                    <div className="p">
-                    <FaRuler size="200px" />
-                        <br></br>
-                    <a href="/lengthcalculator" id="prl1">Infant Length Percentile Calculator</a>
-                    </div>
-
-                    <div className="r-2">
-                    <IoIosCalculator size="200px" />
-                        <br></br>
-                    <a href="/weightcalculator" id="prl2">Infant Weight Percentile Calculator</a>
-                   </div>   
 
                    <div className="pr-3">
                    <GiMeditation size="200px" />
