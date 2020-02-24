@@ -50,12 +50,11 @@ function NavBarComponent({ loggedIn, _logout }) {
                     <NavDropdown.Item href="/eating">Eating</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Percentile Calculators" id="collasible-nav-dropdown">
-                    <NavDropdown.Item href="/percentile">Weight Percentile Calculator</NavDropdown.Item>
-                    <NavDropdown.Item href="/percentile">Length Percentile Calculator</NavDropdown.Item>
+                    {/* <NavDropdown.Item href="/percentile">Weight Percentile Calculator</NavDropdown.Item> */}
+                    <NavDropdown.Item href="/percentile">Length & Weight Percentile Calculator</NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown title="Parent Resources" id="collasible-nav-dropdown">
                     <NavDropdown.Item href="/doctorSearch">Find a Pediatrician</NavDropdown.Item>
-                    <NavDropdown.Item href="/meditation">Meditation</NavDropdown.Item>
                 </NavDropdown>
             </Navbar>
                     </li>

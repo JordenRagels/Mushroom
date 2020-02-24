@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Header } from '../../components';
 import "./home.css";
+import { NavBar } from '../../components/Navbar'
 
 export default class Home extends Component {
 	constructor(props) {
@@ -19,23 +20,24 @@ export default class Home extends Component {
 			return (
 				<div className="Home">
 					<Header user={this.state.user} />
-					<p>Current User:</p>
+					{/* <p>Current User:</p>
 					<code>
 						{JSON.stringify(this.props)}
-					</code>
+					</code> */}
 				</div>
 			)
 		} else {
 			return (
 				<div className="Home">
 					<Header user={this.state.user} />
-					<p>Current User:</p>
+					{/* <p>Current User:</p>
 					<code>
 						{JSON.stringify(this.props)}
-					</code>
+					</code> */}
 				</div>
 			)
 		}
+		
 	}
 
 }

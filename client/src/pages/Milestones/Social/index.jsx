@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavBar } from '../../../components/Navbar'
 import "./social.css";
 import Chart from "chart.js";
 import Ap from './socialLog';
@@ -92,13 +91,13 @@ export default class Motor extends Component {
                     {
                        
                         data: [2, 3, 4, 4, 4, 5, 5,5,6,9,11] ,
-                        backgroundColor: "#D2C4C3",
+                        backgroundColor: "#6E9EEB",
                         color: '#D2C4C3'
                     },
                     {
                         
                         data:[2,2,2,2,3,5,6,6,6,3,1],
-                        backgroundColor: "#94A0B0",
+                        backgroundColor: "#9A75F0",
                         
                     }
                 ]
@@ -113,7 +112,6 @@ export default class Motor extends Component {
     render() {
         return (
             <div>
-                <NavBar />
                 <div className="background">
             <div className="heading">
             <h1>Social Skills</h1>

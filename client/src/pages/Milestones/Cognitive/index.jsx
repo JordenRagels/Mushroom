@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./cognitive.css";
 import Chart from "chart.js";
 import Ap from './cogLog'
-import { NavBar } from '../../../components/Navbar'
+
 
 const barOptions_stacked = {
     tooltips: {
@@ -84,12 +84,12 @@ export default class Cognitive extends Component {
                 datasets: [
                     {
                         data: [1, 2, 3, 4, 5, 6, 9, 9, 9, 9, 10, 10, 11, 11, 11, 11],
-                        backgroundColor: "#D2C4C3",
+                        backgroundColor: "#6E9EEB",
                         color: '#D2C4C3'
                     },
                     {
                         data: [1, 1, 2, 2, 5, 4, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1],
-                        backgroundColor: "#94A0B0",
+                        backgroundColor: "#9A75F0",
                     }
                 ]
             },

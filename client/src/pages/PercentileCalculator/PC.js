@@ -6,7 +6,7 @@ export class Per extends React.Component {
     render() {
         return (
             <div>
-                <h1>Length Percentile Calculator</h1>
+                <h1>Length & Weight Percentile Calculator</h1>
                 
             </div>
         )

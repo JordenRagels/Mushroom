@@ -75,7 +75,23 @@ function Ap() {
     labels: ['Cognitive'],
     datasets: [{
       data: [1],
-      backgroundColor: '#94A0B0',
+      backgroundColor: ['#9B72FF',
+      '#1FEC72',
+       '#FFB429', 
+       '#ED7884', 
+       '#0043A9',
+       '#B5399B',
+       '#E86EAD',
+       '#FFE751',
+       '#00CBE3',
+       '#F9958A',
+       '#21CCCC',
+       '#C5FF2D',
+       '#FF9DEE',
+       '#5D94FF',
+       '#56E76F',
+       '#3E59FF',
+       '#F06FBD'],
     }]
   });
   console.log(zState.labels);
