@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Navigations } from '../../../components/Navigations'
 
 class LengthCalculator extends React.Component {

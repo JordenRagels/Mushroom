@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Navigations } from '../../../components/Navigations'
 
 class WeightCalculator extends React.Component {

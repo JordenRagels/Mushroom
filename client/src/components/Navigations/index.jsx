@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from 'react-router-dom'
 import './navigations.css'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
-import {GiMushroomGills, GiMushroom} from "react-icons/gi"
+import {GiMushroom} from "react-icons/gi"
 function NavigationsComponent() {
   return (
     <div className="navB">

@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import { Header } from '../../components';
 import "./home.css";
-import HomeNavs from '../../components/HomeNavs/index';
-import LoginForm from '../LoginForm';
 import { Navigations } from '../../components/Navigations'
 import { GiMushroom } from "react-icons/gi"
 export default class Home extends Component {

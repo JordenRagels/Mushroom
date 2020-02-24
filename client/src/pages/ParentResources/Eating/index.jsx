@@ -1,6 +1,5 @@
 import "./eating.css";
 import React, { Component } from 'react';
-import { NavBar } from '../../../components/Navbar'
 import {Navigations} from '../../../components/Navigations'
 class Eating extends Component {
     render() {

@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Chart from "../Chart/chart"
 
 const HeaderComponent = props => {
-	let Greeting
+
 	if (props.user === null) {
 		Greeting = <p>Hello guest</p>
 	} else if (props.user.firstName) {

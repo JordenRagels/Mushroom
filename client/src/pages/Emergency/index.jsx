@@ -2,9 +2,8 @@ import "./emergency.css";
 import React, { Component } from 'react';
 import { Navigations } from '../../components/Navigations/index';
 import AllergiesList from "./allergies";
-import AllergiesItems from "./AllergiesItems";
 import MedsList from "./meds";
-import MedsItems from "./medsItems";
+
 
 class Emergency extends Component {
     render() {
@@ -25,7 +24,7 @@ class Emergency extends Component {
 
                     <div className="rowC">
                         <div className="infant-choking">
-                            <img className="choking" src=""></img>
+                         
                         </div>
                         <div className="child-med-info">
                             <div className="allergens">

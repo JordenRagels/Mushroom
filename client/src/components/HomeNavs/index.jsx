@@ -1,8 +1,7 @@
 import React from "react"
-import { Link } from 'react-router-dom';
 import './homenavs.css'
 import { NavBar } from "../Navbar"
-import { Navbar, Nav, NavDropdown, NavItem } from 'react-bootstrap';
+import { Navbar, NavDropdown} from 'react-bootstrap';
 
 function HomeNavs() {
 

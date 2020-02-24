@@ -1,4 +1,3 @@
-import React from "react";
 import anime from "animejs"
 export function initAnimation() {
   let { size } = this.props;

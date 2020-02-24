@@ -6,7 +6,7 @@ import { initAnimation } from "./basic-shape.js";
 
 export default class Meditation extends React.Component {
     static defaultProps = {
-        color: "lightBlue",
+        
         size: 200,
         inhale: 4000,
         inhaleHold: 4000,
@@ -15,7 +15,6 @@ export default class Meditation extends React.Component {
     };
     static propTypes = {
         size: PropTypes.number,
-        color: PropTypes.string,
         inhale: PropTypes.number,
         inhaleHold: PropTypes.number,
         exhale: PropTypes.number,
@@ -26,7 +25,7 @@ export default class Meditation extends React.Component {
         initAnimation.bind(this)();
     }
     render() {
-        let { size, color } = this.props;
+        let { size } = this.props;
         return (
             <div>
                 <Navigations />
