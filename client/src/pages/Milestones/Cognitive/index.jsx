@@ -97,7 +97,6 @@ export default class Cognitive extends Component {
             options:
 
                 barOptions_stacked
-
             //Customize chart options
 
         });
@@ -105,7 +104,6 @@ export default class Cognitive extends Component {
     render() {
         return (
             <div>
-                <NavBar/>
                 <div className="background">
                 <div className="heading">
                     <h1>Cognitive Skills</h1>
