@@ -1,6 +1,6 @@
 {
-  "name": "react-template",
-  "version": "0.1.0",
+  "name": "myapp",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "animejs": "^3.1.0",
@@ -43,7 +43,7 @@
   "engines": {
     "node": "12.13.0"
   },
-  "description": "1) Forked from create-react-app, create-react-express, 08-Ins-MERN, and react-passport-exampl",
+  "description": "baby app",
   "main": "server.js",
   "repository": {
     "type": "git",
