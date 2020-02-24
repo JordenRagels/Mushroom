@@ -79,18 +79,21 @@ body{
   float: left;
   border-bottom: double 10px #042d23;
   text-decoration: none;
+
 }
 .tagline{
   width: 100%;
   background-color: white;
   text-align: left;
   padding-top: 9%;
-  padding-bottom: 1.4%;
+  padding-bottom: 1.1%;
   border-bottom: #042d23 double 10px;
+  text-indent: 150px;
 }
 .homepagenav{
   background-color: white;
   padding-bottom: 1%;
+  color: #042920;
 }
 .footer-copyright-home{
   margin-top: 24%;

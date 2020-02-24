@@ -105,7 +105,7 @@ export default class Cognitive extends Component {
     render() {
         return (
             <div>
-                <Navigations />
+                <Navigations/>
                 <div className="background">
                 <div className="heading">
                     <h1>Cognitive Skills</h1>

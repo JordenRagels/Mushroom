@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./verbal.css";
-import { Navigations } from '../../../components/Navigations/index';
+import { Navigations } from '../../../components/Navigations'
 import Chart from "chart.js";
 import Ap from './verbalLog'
 
@@ -103,7 +103,7 @@ export default class Verbal extends Component {
     render() {
         return (
             <div>
-                <Navigations />
+                <Navigations/>
                 <div className="background">
                 <div className="heading">
                     <h1>Verbal Skills</h1>

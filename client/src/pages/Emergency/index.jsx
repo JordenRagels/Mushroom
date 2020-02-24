@@ -5,7 +5,7 @@ import AllergiesList from "./allergies";
 import AllergiesItems from "./AllergiesItems";
 import MedsList from "./meds";
 import MedsItems from "./medsItems";
-import { Foot } from "../../components/Footer"
+
 class Emergency extends Component {
     render() {
         return (

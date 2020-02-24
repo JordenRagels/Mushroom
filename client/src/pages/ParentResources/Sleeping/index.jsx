@@ -1,6 +1,6 @@
 import React from 'react';
 import "./sleeping.css";
-import { Navigations } from '../../../components/Navigations/index';
+import { Navigations} from '../../../components/Navigations'
 
 class Sleeping extends React.Component {
     render() {

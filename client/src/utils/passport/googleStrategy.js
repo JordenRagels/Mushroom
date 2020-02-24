@@ -1,5 +1,5 @@
 const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy
-const User = require('../../../../models').User
+const User = require('../../models').User
 
 const strategy = new GoogleStrategy(
 	{
@@ -7,10 +7,10 @@ const strategy = new GoogleStrategy(
 		clientSecret: process.env.GOOGLE_CLIENT_SECRET,
 		callbackURL: '/auth/google/callback'
 	},
-	function(accessToken, refreshToken, profile, done) {
+	function(accessToken, refreshToken, profile, done) {c
 		console.log(profile)
 		const { id, name, photos } = profile
-		User.findOne({ 'google.googleId': id }, (err, userMatch) => {
+		User.findOne({ where: {'google.googleId': id }}, (err, userMatch) => {
 			// handle errors here:
 			if (err) {
 				return done(null, false)
@@ -19,23 +19,21 @@ const strategy = new GoogleStrategy(
 			if (userMatch) {
 				return done(null, userMatch)
 			} else {
-				const newGoogleUser = new User({
+				User.create({
 					'google.googleId': id,
 					firstName: name.givenName,
-					lastName: name.familyName,
-					photos: photos
-				})
-				newGoogleUser.save((err, savedUser) => {
+					lastName: name.familyName
+				}, {}).then(err, savedUser => {
 					if (err) {
 						console.log(err)
 						return done(null, false)
 					} else {
 						return done(null, savedUser)
 					}
-				})
+				});
 			}
 		})
 	}
 )
 
-module.exports = strategy
+module.exports = strategy;

@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import LoginForm from './pages/LoginForm'
 import SignupForm from './pages/SignupForm'
 import Home from './pages/Home'
-import { NavBar } from './components'
+
 //Milestones
 import MilestonesHome from "./pages/Milestones"
 import Cognitive from './pages/Milestones/Cognitive'

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Navigations } from '../../../components/Navigations/index';
+import { Navigations } from '../../../components/Navigations'
 import "./social.css";
 import Chart from "chart.js";
 import Ap from './socialLog';
-import { Footer } from '../../../components/Footer';
 
 
 const barOptions_stacked = {
@@ -113,7 +112,7 @@ export default class Motor extends Component {
     render() {
         return (
             <div>
-                <Navigations/>
+                <Navigations />
                 <div className="background">
             <div className="heading">
             <h1>Social Skills</h1>
