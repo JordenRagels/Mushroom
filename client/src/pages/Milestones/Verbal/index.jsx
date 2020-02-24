@@ -115,13 +115,6 @@ export default class Verbal extends Component {
                 <Ap />
                 <br></br>
           </div>
-          <div className="footer">
-                    <div className="footer-copyright-milc">
-                        <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
-                        <br></br>
-                        <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
-                    </div>
-                </div>
             </div>
         )
     }
