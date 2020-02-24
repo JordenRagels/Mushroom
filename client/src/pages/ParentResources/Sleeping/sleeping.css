@@ -1,5 +1,6 @@
-thead{
+thead {
     font-weight: bolder;
+<<<<<<< HEAD:client/src/pages/ParentResources/Sleeping/sleeping.css
     border-bottom: #042920 solid 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     border-top: #042920 solid 5px;
@@ -20,10 +21,36 @@ td{
 table{
     width: 85%;
 margin: auto;
+=======
+    border-bottom: #c2d9dd solid 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-top: #c2d9dd solid 5px;
 }
-.months{
+
+th {
+    border: #c2d9dd solid 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d5c3c0
+}
+
+td {
+    border-left: #c2d9dd solid 2px;
+    border-right: #c2d9dd solid 2px;
+    background-color: #c2d9dd;
+    border-bottom: #c2d9dd solid 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #d5c3c0;
+}
+
+table {
+    width: 100%;
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1:client/src/pages/EatingandSleepingCharts/Sleeping/sleeping.css
+}
+
+.months {
     font-weight: bolder
 }
-.navbar{
+
+.navbar {
     border-bottom: 7px solid black;
 }

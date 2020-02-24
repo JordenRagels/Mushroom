@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { Navigations } from '../../../components/Navigations'
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
 import "./social.css";
 import Chart from "chart.js";
 import Ap from './socialLog';
@@ -91,13 +94,22 @@ export default class Motor extends Component {
                     {
                        
                         data: [2, 3, 4, 4, 4, 5, 5,5,6,9,11] ,
+<<<<<<< HEAD
                         backgroundColor: "#fefdfc",
                         color: "#fefdfc"
+=======
+                        backgroundColor: "#6E9EEB",
+                        color: '#D2C4C3'
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
                     },
                     {
                         
                         data:[2,2,2,2,3,5,6,6,6,3,1],
+<<<<<<< HEAD
                         backgroundColor: "#48665f",
+=======
+                        backgroundColor: "#9A75F0",
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
                         
                     }
                 ]
@@ -112,7 +124,10 @@ export default class Motor extends Component {
     render() {
         return (
             <div>
+<<<<<<< HEAD
                 <Navigations />
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
                 <div className="background">
             <div className="heading">
             <h1>Social Skills</h1>
@@ -126,6 +141,7 @@ export default class Motor extends Component {
             <Ap/>
             <br></br>
             </div>
+<<<<<<< HEAD
             <div className="footer">
                     <div className="footer-copyright-milc">
                         <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
@@ -133,6 +149,8 @@ export default class Motor extends Component {
                         <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
                     </div>
                 </div>
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
             </div>
         )
     }

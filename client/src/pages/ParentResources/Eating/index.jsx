@@ -1,13 +1,20 @@
 import "./eating.css";
 import React, { Component } from 'react';
+<<<<<<< HEAD:client/src/pages/ParentResources/Eating/index.jsx
 import { NavBar } from '../../../components/Navbar'
 import {Navigations} from '../../../components/Navigations'
+=======
+
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1:client/src/pages/EatingandSleepingCharts/Eating/index.jsx
 class Eating extends Component {
     render() {
         return (
             <div>
+<<<<<<< HEAD:client/src/pages/ParentResources/Eating/index.jsx
                 <Navigations/>
                 <div className="table">
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1:client/src/pages/EatingandSleepingCharts/Eating/index.jsx
                 <table>
                     <thead>
                         <tr>
@@ -180,6 +187,7 @@ class Eating extends Component {
                        
                     </tbody>
                 </table>
+<<<<<<< HEAD:client/src/pages/ParentResources/Eating/index.jsx
                 </div>
                 <div className="footer">
                     <div className="footer-copyright-pr">
@@ -188,6 +196,8 @@ class Eating extends Component {
                         <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
                     </div>
                 </div>
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1:client/src/pages/EatingandSleepingCharts/Eating/index.jsx
             </div>
         )
     }

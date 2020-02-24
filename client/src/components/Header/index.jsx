@@ -1,5 +1,7 @@
 import React from 'react'
 import './header.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Chart from "../Chart/chart"
 
 const HeaderComponent = props => {
 	let Greeting
@@ -19,9 +21,9 @@ const HeaderComponent = props => {
 		)
 	}
 	return (
-		<div className="Header">
-			{Greeting}
-		</div>
+  <div className="Header">
+   <Chart></Chart>
+  </div>
 	)
 }
 

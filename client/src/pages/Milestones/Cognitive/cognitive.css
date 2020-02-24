@@ -1,15 +1,20 @@
-
-h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: inherit;
+<<<<<<< HEAD
     padding:50px;
     background-color: #fefdfc;
+=======
+    padding: 50px;
+    /* background-color: #D2C4C3; */
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     text-decoration: black underline;
 }
 
-.line.tickline{
+.line.tickline {
     color: black
 }
+<<<<<<< HEAD
 .cogLog{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
@@ -18,48 +23,68 @@ h1{
 .n{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
+=======
+
+.cogLog {
+    /* background-color: #D2C4C3; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.n {
+    /* background-color: #D2C4C3; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     text-align: center;
     width: 75%;
     margin: auto;
 }
+<<<<<<< HEAD
 .background{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     border: 10px solid #988f8e;
     background-color: #fefdfc;
+=======
+
+.background {
+    /* background-color: #D2C4C3; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 10px solid #988f8e;
+    outline: solid 5px #988f8e; */
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     outline-offset: -20px;
     width: 90%;
     margin: auto;
 }
 
-
-
-.btn-success{
-background-color: #94A0B0;
-border-COLOR: #A2B9BF;
-text-align: center;
-
-}
-.btn-success:hover{
-background-color:#A2B9BF ;
- border-color: #94A0B0;
+.btn-success {
+    background-color: #94A0B0;
+    border-COLOR: #A2B9BF;
+    text-align: center;
 }
 
-.btn-success:active{
-    background-color:#A2B9BF ;
+.btn-success:hover {
+    background-color: #A2B9BF;
     border-color: #94A0B0;
 }
-.btn-success:focus{
-    background-color:#A2B9BF ;
-    border-color: #94A0B0;
 
-}
-.btn-success:visited{
-    background-color:#A2B9BF ;
+.btn-success:active {
+    background-color: #A2B9BF;
     border-color: #94A0B0;
 }
-.btn-success:focus-within{
-    background-color:#A2B9BF ;
+
+.btn-success:focus {
+    background-color: #A2B9BF;
+    border-color: #94A0B0;
+}
+
+.btn-success:visited {
+    background-color: #A2B9BF;
+    border-color: #94A0B0;
+}
+
+.btn-success:focus-within {
+    background-color: #A2B9BF;
     border-color: #94A0B0;
 }
 .zzz{

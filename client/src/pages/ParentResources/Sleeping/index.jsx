@@ -1,12 +1,18 @@
 import React from 'react';
 import "./sleeping.css";
+<<<<<<< HEAD:client/src/pages/ParentResources/Sleeping/index.jsx
 import { Navigations} from '../../../components/Navigations'
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1:client/src/pages/EatingandSleepingCharts/Sleeping/index.jsx
 
 class Sleeping extends React.Component {
     render() {
         return (
             <div>
+<<<<<<< HEAD:client/src/pages/ParentResources/Sleeping/index.jsx
                 <Navigations />
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1:client/src/pages/EatingandSleepingCharts/Sleeping/index.jsx
                 <table>
                     <thead>
                         <tr>
@@ -177,6 +183,7 @@ class Sleeping extends React.Component {
                         </tr>
                     </tbody>
                 </table>
+<<<<<<< HEAD:client/src/pages/ParentResources/Sleeping/index.jsx
                 <div className="footer">
                     <div className="footer-copyright-pr">
                         <h7 id="src"> Information Sourced from the Center for Disease Control and The World Health Organization</h7>
@@ -184,6 +191,8 @@ class Sleeping extends React.Component {
                         <h8 id="cop"> &copy; 2020 Copyright: Mushroom</h8>
                     </div>
                 </div>
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1:client/src/pages/EatingandSleepingCharts/Sleeping/index.jsx
             </div>
         )
     }

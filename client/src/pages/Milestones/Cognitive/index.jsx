@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import "./cognitive.css";
 import Chart from "chart.js";
 import Ap from './cogLog'
+<<<<<<< HEAD
 import { Navigations } from '../../../components/Navigations'
+=======
+
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
 
 const barOptions_stacked = {
     tooltips: {
@@ -84,12 +88,21 @@ export default class Cognitive extends Component {
                 datasets: [
                     {
                         data: [1, 2, 3, 4, 5, 6, 9, 9, 9, 9, 10, 10, 11, 11, 11, 11],
+<<<<<<< HEAD
                         backgroundColor: "#fefdfc",
                         color: "#fefdfc"
                     },
                     {
                         data: [1, 1, 2, 2, 5, 4, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1],
                         backgroundColor: "#48665f",
+=======
+                        backgroundColor: "#6E9EEB",
+                        color: '#D2C4C3'
+                    },
+                    {
+                        data: [1, 1, 2, 2, 5, 4, 3, 3, 3, 3, 2, 2, 1, 1, 1, 1],
+                        backgroundColor: "#9A75F0",
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
                     }
                 ]
             },
@@ -97,7 +110,6 @@ export default class Cognitive extends Component {
             options:
 
                 barOptions_stacked
-
             //Customize chart options
 
         });
@@ -105,7 +117,10 @@ export default class Cognitive extends Component {
     render() {
         return (
             <div>
+<<<<<<< HEAD
                 <Navigations/>
+=======
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
                 <div className="background">
                 <div className="heading">
                     <h1>Cognitive Skills</h1>

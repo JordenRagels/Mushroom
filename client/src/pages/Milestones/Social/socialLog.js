@@ -74,8 +74,29 @@ function Ap() {
   const [zState, setZState] = useState({
     labels: [],
     datasets: [{
+<<<<<<< HEAD
       data: [0],
       backgroundColor: "#48665f",
+=======
+      data: [1],
+      backgroundColor: ['#9B72FF',
+      '#1FEC72',
+       '#FFB429', 
+       '#ED7884', 
+       '#0043A9',
+       '#B5399B',
+       '#E86EAD',
+       '#FFE751',
+       '#00CBE3',
+       '#F9958A',
+       '#21CCCC',
+       '#C5FF2D',
+       '#FF9DEE',
+       '#5D94FF',
+       '#56E76F',
+       '#3E59FF',
+       '#F06FBD'],
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     }]
   });
   console.log(zState.labels);

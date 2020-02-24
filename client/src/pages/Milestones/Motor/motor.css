@@ -1,15 +1,24 @@
+<<<<<<< HEAD
 
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     font-style: inherit;
     padding:50px;
     background-color: #fefdfc;
+=======
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: inherit;
+    padding: 50px;
+    /* background-color: #D2C4C3; */
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     text-decoration: black underline;
 }
 
-.line.tickline{
+.line.tickline {
     color: black
 }
+<<<<<<< HEAD
 .motorLog{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
@@ -24,10 +33,29 @@ h1{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     border: 10px solid #988f8e;
-    outline: solid 5px #988f8e;
-    outline-offset: -20px;
+=======
+
+.motorLog {
+    /* background-color: #D2C4C3; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.n {
+    /* background-color: #D2C4C3; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.background {
+    /* background-color: #D2C4C3; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 10px solid #988f8e;
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
+    outline: solid 5px #988f8e;
+    outline-offset: -20px; */
+}
+
+<<<<<<< HEAD
 .btn-success{
 background-color: #94A0B0;
 border-COLOR: #A2B9BF;
@@ -37,22 +65,35 @@ text-align: center;
 .btn-success:hover{
 background-color:#A2B9BF ;
  border-color: #94A0B0;
+=======
+.btn-success {
+    background-color: #94A0B0;
+    border-COLOR: #A2B9BF;
+    text-align: center;
+>>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
 }
 
-.btn-success:active{
-    background-color:#A2B9BF ;
+.btn-success:hover {
+    background-color: #A2B9BF;
     border-color: #94A0B0;
 }
-.btn-success:focus{
-    background-color:#A2B9BF ;
-    border-color: #94A0B0;
 
-}
-.btn-success:visited{
-    background-color:#A2B9BF ;
+.btn-success:active {
+    background-color: #A2B9BF;
     border-color: #94A0B0;
 }
-.btn-success:focus-within{
-    background-color:#A2B9BF ;
+
+.btn-success:focus {
+    background-color: #A2B9BF;
+    border-color: #94A0B0;
+}
+
+.btn-success:visited {
+    background-color: #A2B9BF;
+    border-color: #94A0B0;
+}
+
+.btn-success:focus-within {
+    background-color: #A2B9BF;
     border-color: #94A0B0;
 }
