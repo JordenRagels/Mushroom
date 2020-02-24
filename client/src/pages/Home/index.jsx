@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import { Header } from '../../components';
 import "./home.css";
-<<<<<<< HEAD
 import HomeNavs from '../../components/HomeNavs/index';
 import LoginForm from '../LoginForm';
 import { Navigations } from '../../components/Navigations'
 import { GiMushroom } from "react-icons/gi"
-=======
-import { NavBar } from '../../components/Navbar'
-
->>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
 export default class Home extends Component {
 	constructor(props) {
 		super(props)
@@ -23,7 +18,6 @@ export default class Home extends Component {
 	}
 
 	render() {
-<<<<<<< HEAD
 		return (
 			<div>
 				<div className="homepagenav">
@@ -42,29 +36,5 @@ export default class Home extends Component {
 				</div>
 			</div>
 		)
-=======
-		if (this.props.user) {
-			return (
-				<div className="Home">
-					<Header user={this.state.user} />
-					{/* <p>Current User:</p>
-					<code>
-						{JSON.stringify(this.props)}
-					</code> */}
-				</div>
-			)
-		} else {
-			return (
-				<div className="Home">
-					<Header user={this.state.user} />
-					{/* <p>Current User:</p>
-					<code>
-						{JSON.stringify(this.props)}
-					</code> */}
-				</div>
-			)
-		}
-		
->>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
 	}
 }

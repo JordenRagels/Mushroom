@@ -1,20 +1,14 @@
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: inherit;
-<<<<<<< HEAD
     padding:50px;
     background-color: #fefdfc;
-=======
-    padding: 50px;
-    /* background-color: #D2C4C3; */
->>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     text-decoration: black underline;
 }
 
 .line.tickline {
     color: black
 }
-<<<<<<< HEAD
 .cogLog{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
@@ -23,35 +17,15 @@ h1 {
 .n{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-=======
-
-.cogLog {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.n {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
->>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     text-align: center;
     width: 75%;
     margin: auto;
 }
-<<<<<<< HEAD
 .background{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     border: 10px solid #988f8e;
     background-color: #fefdfc;
-=======
-
-.background {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* border: 10px solid #988f8e;
-    outline: solid 5px #988f8e; */
->>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     outline-offset: -20px;
     width: 90%;
     margin: auto;

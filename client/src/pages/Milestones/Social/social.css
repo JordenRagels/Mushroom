@@ -1,15 +1,5 @@
-<<<<<<< HEAD
 
 .Srcs{
-=======
-footer {
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-top: black 5px double;
-}
-
-.Srcs {
->>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     color: black;
     font-size: x-small;
     float: left;
@@ -26,7 +16,6 @@ h1 {
 .line.tickline {
     color: black
 }
-<<<<<<< HEAD
 .socialLog{
     background-color: #fefdfc;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
@@ -42,25 +31,6 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     border: 10px solid #988f8e;
     outline: solid 5px #988f8e;
-=======
-
-.socialLog {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.n {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-.background {
-    /* background-color: #D2C4C3; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* border: 10px solid #988f8e; */
-    /* outline: solid 5px #988f8e; */
->>>>>>> 58f77628609bb3c28943cff6e5e9bccd6a3feeb1
     outline-offset: -20px;
 }
 
